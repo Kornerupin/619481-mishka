@@ -83,18 +83,22 @@
 
   </footer>
 
-  <div class="basket-add-menu">
-    <h3 class="basket-add-menu__title">Добавить в корзину</h3>
-    <p class="basket-add-menu__description">Выберите размер:</p>
-    <form class="basket-add-menu__form" action="https://echo.htmlacademy.ru" method="post">
-      <label class="basket-add-menu__item-type"><input type="radio" name="size" value="S" checked />S</label>
-      <label class="basket-add-menu__item-type"><input type="radio" name="size" value="M" />M</label>
-      <label class="basket-add-menu__item-type"><input type="radio" name="size" value="L" />L</label>
-      <input type="hidden" name="product-id" value="23423" />
-      <input type="hidden" name="session-id" value="sd123sdfs3234" />
-      <input class="basket-add-menu__submit" type="submit" value="Добавить" />
-    </form>
-  </div>
+  <section class="popup">
+    <h2 class="popup__title">POPUP__TITLE</h2>
+
+    <article class="popup__content add-to-basket hide">
+      <p class="add-to-basket__description">Выберите размер:</p>
+
+      <form class="add-to-basket__form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="add-to-basket__item-type"><input type="radio" name="size" value="S" checked />S</label>
+        <label class="add-to-basket__item-type"><input type="radio" name="size" value="M" />M</label>
+        <label class="add-to-basket__item-type"><input type="radio" name="size" value="L" />L</label>
+        <input type="hidden" name="product-id" value="23423" />
+        <input type="hidden" name="session-id" value="sd123sdfs3234" />
+        <input class="add-to-basket__submit" type="submit" value="Добавить" />
+      </form>
+    </article>
+  </section>
 
   </body>
 </html>
