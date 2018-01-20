@@ -1,87 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Мишка</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
 
-<header class="page-header">
+  <header class="page-header">
 
-  <a class="page-header__logo-link">
-    <img class="page-header__logo-image" src="./img/logo-m.png" alt="MISHKA" />
-  </a>
+    <a class="page-header__logo-link">
+      <img class="page-header__logo-image" src="./img/logo-m.png" alt="MISHKA" />
+    </a>
 
-  <nav class="main-nav">
-    <button class="main-nav__button-toggle" title="Открыть меню"></button>
-    <ul class="main-nav__list">
-      <li><a class="main-nav__item main-nav__item--catalog" href="#">Каталог товаров</a></li>
-      <li><a class="main-nav__item main-nav__item--knitting" href="#">Вязание на заказ</a></li>
-      <!-- Сделал бы тут форму поиска, только не знаю, мб это ссылка на страницу поиска -->
-      <li><a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a></li>
-      <li><a class="main-nav__item main-nav__item--basket" href="#">Корзина: <span>пока пуста</span></a></li>
-    </ul>
-  </nav>
+    <nav class="main-nav">
+      <button class="main-nav__button-toggle" title="Открыть меню"></button>
+      <ul class="main-nav__list">
+        <li><a class="main-nav__item main-nav__item--catalog" href="#">Каталог товаров</a></li>
+        <li><a class="main-nav__item main-nav__item--knitting" href="#">Вязание на заказ</a></li>
+        <!-- Сделал бы тут форму поиска, только не знаю, мб это ссылка на страницу поиска -->
+        <li><a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a></li>
+        <li><a class="main-nav__item main-nav__item--basket" href="#">Корзина: <span>пока пуста</span></a></li>
+      </ul>
+    </nav>
 
-</header>
+  </header>
 
-<main class="page-main">
+  <main class="page-main">
 
-  <h1 class="page-main__header">Каталог товаров</h1>
+    <h1 class="page-main__header">Каталог товаров</h1>
 
-  <section class="page-main__product product-card" data-id="2433234">
-    <img class="product-card__image" src="#" alt="Зайчик-попрыгайчик" />
-    <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
-    <p class="product-card__description">Рост 30см, вес 200г</p>
-    <hr class="product-card__line" />
-    <div class="product-card__price"><span class="product-card__price--thousand">1</span>200 руб.</div>
-    <button class="product-card__to-basket" title="В корзину"></button>
-  </section>
+    <section class="page-main__product product-card" data-id="2433234">
+      <img class="product-card__image" src="#" alt="Зайчик-попрыгайчик" />
+      <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
+      <p class="product-card__description">Рост 30см, вес 200г</p>
+      <hr class="product-card__line" />
+      <div class="product-card__price"><span class="product-card__price--thousand">1</span>200 руб.</div>
+      <button class="product-card__to-basket" title="В корзину"></button>
+    </section>
 
-  <section class="page-main__production-process production-process">
-    <h3 class="production-process__title">Процесс производства</h3>
-    <video  style="width:100%;" height="100" poster="video/exemple.jpg">
-      <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
-      Надо будет попробовать вставить сюда iframe с ютуба и посмотреть, будет ли он грузиться, если загрузятся варианты выше.
-      <a href="http://youtube.com/my-video/video/demo.mp4">Перейдите по ссылке, чтобы посмотреть видео на ютубе.</a>.
-    </video>
-    <p class="production-process__description">
-      По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-    </p>
-    <button class="production-process__order">Сделать заказ</button>
-  </section>
+    <section class="page-main__production-process production-process">
+      <h3 class="production-process__title">Процесс производства</h3>
+      <video  style="width:100%;" height="100" poster="video/exemple.jpg">
+        <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+        Надо будет попробовать вставить сюда iframe с ютуба и посмотреть, будет ли он грузиться, если загрузятся варианты выше.
+        <a href="http://youtube.com/my-video/video/demo.mp4">Перейдите по ссылке, чтобы посмотреть видео на ютубе.</a>.
+      </video>
+      <p class="production-process__description">
+        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+      </p>
+      <button class="production-process__order">Сделать заказ</button>
+    </section>
 
-</main>
+  </main>
 
-<footer class="page-footer">
-  <div class="page-footer__soz soz">
-    <ul class="soz__list">
-      <li><a class="soz__item soz__item--instagram" href="#"></a></li>
-      <li><a class="soz__item soz__item--facebook" href="#"></a></li>
-      <li><a class="soz__item soz__item--twitter" href="#"></a></li>
-    </ul>
+  <footer class="page-footer">
+    <div class="page-footer__soz soz">
+      <ul class="soz__list">
+        <li><a class="soz__item soz__item--instagram" href="#"></a></li>
+        <li><a class="soz__item soz__item--facebook" href="#"></a></li>
+        <li><a class="soz__item soz__item--twitter" href="#"></a></li>
+      </ul>
+    </div>
+
+    <hr class="page-footer__line" />
+
+    <div class="page-footer__developer">
+      Разработано
+    </div>
+
+  </footer>
+
+  <div class="basket-add-menu">
+    <h3 class="basket-add-menu__title">Добавить в корзину</h3>
+    <p class="basket-add-menu__description">Выберите размер:</p>
+    <form class="basket-add-menu__form" action="https://echo.htmlacademy.ru" method="post">
+      <label class="basket-add-menu__item-type"><input type="radio" name="size" value="S" checked />S</label>
+      <label class="basket-add-menu__item-type"><input type="radio" name="size" value="M" />M</label>
+      <label class="basket-add-menu__item-type"><input type="radio" name="size" value="L" />L</label>
+      <input type="hidden" name="product-id" value="23423" />
+      <input type="hidden" name="session-id" value="sd123sdfs3234" />
+      <input class="basket-add-menu__submit" type="submit" value="Добавить" />
+    </form>
   </div>
 
-  <hr class="page-footer__line" />
-
-  <div class="page-footer__developer">
-    Разработано
-  </div>
-
-</footer>
-
-<div class="basket-add-menu">
-  <h3 class="basket-add-menu__title">Добавить в корзину</h3>
-  <p class="basket-add-menu__description">Выберите размер:</p>
-  <form class="basket-add-menu__form" action="https://echo.htmlacademy.ru" method="post">
-    <label class="basket-add-menu__item-type"><input type="radio" name="size" value="S" checked />S</label>
-    <label class="basket-add-menu__item-type"><input type="radio" name="size" value="M" />M</label>
-    <label class="basket-add-menu__item-type"><input type="radio" name="size" value="L" />L</label>
-    <input type="hidden" name="product-id" value="23423" />
-    <input type="hidden" name="session-id" value="sd123sdfs3234" />
-    <input class="basket-add-menu__submit" type="submit" value="Добавить" />
-  </form>
-</div>
-
-</body>
+  </body>
 </html>
