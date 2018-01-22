@@ -36,14 +36,15 @@
   </header>
 
   <main class="page-main">
+    <h1 class="page-main__title">Каталог товаров</h1>
 
-    <section class="page-main__catalog">
-      <h1 class="page-main__header">Каталог товаров</h1>
+    <section class="page-main__catalog catalog">
+      <h2 class="catalog__title hide">Товары:</h2>
 
       <article class="product-card" data-id="2433234">
         <a href="#hare">
           <img class="product-card__image" src="http://placehold.it/258x195" alt="Зайчик-попрыгайчик" />
-          <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
+          <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
         </a>
         <p class="product-card__description">Рост 30см, вес 200г</p>
         <p class="product-card__price">
@@ -55,7 +56,7 @@
       <article class="product-card" data-id="2433235">
         <a href="#basket">
           <img class="product-card__image" src="http://placehold.it/258x195" alt="Корзинка для белья" />
-          <h2 class="product-card__title">Корзинка для белья</h2>
+          <h3 class="product-card__title">Корзинка для белья</h3>
         </a>
         <p class="product-card__description">Диаметр 15 см, высота 10см</p>
         <p class="product-card__price">
@@ -67,7 +68,7 @@
       <article class="product-card" data-id="2433236">
         <a href="#big-basket">
           <img class="product-card__image" src="http://placehold.it/258x195" alt="Большая корзинка для игрушек" />
-          <h2 class="product-card__title">Большая корзинка для игрушек</h2>
+          <h3 class="product-card__title">Большая корзинка для игрушек</h3>
         </a>
         <p class="product-card__description">Диаметр 30см, высота 30см</p>
         <p class="product-card__price">
@@ -98,19 +99,21 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__socials socials">
-      <ul class="socials__list">
-        <li>
-          <a class="socials__item socials__item--instagram" href="#">Instagram</a>
-        </li>
-        <li>
-          <a class="socials__item socials__item--facebook" href="#">Facebook</a>
-        </li>
-        <li>
-          <a class="socials__item socials__item--twitter" href="#">Twitter</a>
-        </li>
-      </ul>
-    </div>
+      <section class="page-footer__socials socials">
+        <h2 class="socials__title hide">Мы в соц.сетях:</h2>
+
+        <ul class="socials__list">
+          <li>
+            <a class="socials__item socials__item--instagram" href="#">Instagram</a>
+          </li>
+          <li>
+            <a class="socials__item socials__item--facebook" href="#">Facebook</a>
+          </li>
+          <li>
+            <a class="socials__item socials__item--twitter" href="#">Twitter</a>
+          </li>
+        </ul>
+      </section>
 
     <div class="page-footer__developer">
       <a href="https://htmlacademy.ru/intensive/adaptive">
