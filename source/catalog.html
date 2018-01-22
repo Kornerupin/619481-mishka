@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+
+  <header class="page-header">
+
+    <a class="page-header__logo-link" href="./index.html">
+      <img class="page-header__logo-image" src="http://placehold.it/320x80" alt="MISHKA" />
+    </a>
+
+    <nav class="main-nav">
+      <button class="main-nav__button-toggle" title="Открыть меню">Открыть меню</button>
+      <ul class="main-nav__list">
+        <li>
+          <a class="main-nav__item main-nav__item--catalog">Каталог товаров</a>
+        </li>
+        <li>
+          <a class="main-nav__item main-nav__item--knitting" href="./form.html">Вязание на заказ</a>
+        </li>
+        <li>
+          <a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a>
+        </li>
+        <li>
+          <a class="main-nav__item main-nav__item--basket" href="#">
+            Корзина:
+            <span>пока пуста</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="page-main">
+    <h1 class="page-main__title">Каталог товаров</h1>
+
+    <section class="page-main__catalog catalog">
+      <h2 class="catalog__title hide">Товары</h2>
+
+      <article class="product-card" data-id="2433234">
+        <a href="#hare">
+          <img class="product-card__image" src="http://placehold.it/258x195" alt="Зайчик-попрыгайчик" />
+          <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
+        </a>
+        <p class="product-card__description">Рост 30см, вес 200г</p>
+        <p class="product-card__price">1 200 руб.</p>
+        <button type="button" class="product-card__to-basket" title="В корзину">Добавить в корзину</button>
+      </article>
+
+      <article class="product-card" data-id="2433235">
+        <a href="#basket">
+          <img class="product-card__image" src="http://placehold.it/258x195" alt="Корзинка для белья" />
+          <h3 class="product-card__title">Корзинка для белья</h3>
+        </a>
+        <p class="product-card__description">Диаметр 15 см, высота 10см</p>
+        <p class="product-card__price">690 руб.</p>
+        <button type="button" class="product-card__to-basket" title="В корзину">Добавить в корзину</button>
+      </article>
+
+      <article class="product-card" data-id="2433236">
+        <a href="#big-basket">
+          <img class="product-card__image" src="http://placehold.it/258x195" alt="Большая корзинка для игрушек" />
+          <h3 class="product-card__title">Большая корзинка для игрушек</h3>
+        </a>
+        <p class="product-card__description">Диаметр 30см, высота 30см</p>
+        <p class="product-card__price">1 500 руб.</p>
+        <button type="button" class="product-card__to-basket" title="В корзину">Добавить в корзину</button>
+      </article>
+    </section>
+
+    <section class="page-main__production-process production-process">
+      <h2 class="production-process__title">Процесс производства</h2>
+
+      <video  style="width:100%;" height="100" poster="video/exemple.jpg">
+        <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+        <!--Надо будет попробовать вставить сюда iframe с ютуба и посмотреть, будет ли он грузиться, если загрузятся варианты выше.-->
+        <a href="http://youtube.com/my-video/video/demo.mp4">
+          Перейдите по ссылке, чтобы посмотреть видео на ютубе.
+        </a>.
+      </video>
+
+      <p class="production-process__description">
+        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+      </p>
+
+      <a href="#" class="production-process__order">Сделать заказ</a>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+      <div class="page-footer__socials socials">
+        <h2 class="socials__title hide">Мы в соц.сетях</h2>
+
+        <ul class="socials__list">
+          <li>
+            <a class="socials__item socials__item--instagram" href="#">Instagram</a>
+          </li>
+          <li>
+            <a class="socials__item socials__item--facebook" href="#">Facebook</a>
+          </li>
+          <li>
+            <a class="socials__item socials__item--twitter" href="#">Twitter</a>
+          </li>
+        </ul>
+      </div>
+
+    <div class="page-footer__developer">
+      <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
+        Разработано
+        <img class="page-footer__developer-image" src="http://placehold.it/27x35" alt="HTML Academy" />
+      </a>
+    </div>
+
+  </footer>
+
+  <div class="popup">
+
+    <div class="popup__content add-to-basket hide">
+      <h2 class="popup__title">Добавить в корзину</h2>
+
+      <p class="add-to-basket__description">Выберите размер:</p>
+
+      <form class="add-to-basket__form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="add-to-basket__item-type">
+          <input type="radio" name="size" value="S" checked /> S
+        </label>
+        <label class="add-to-basket__item-type">
+          <input type="radio" name="size" value="M" /> M
+        </label>
+        <label class="add-to-basket__item-type">
+          <input type="radio" name="size" value="L" /> L
+        </label>
+        <input type="hidden" name="product-id" value="23423" />
+        <input type="hidden" name="session-id" value="sd123sdfs3234" />
+        <input class="add-to-basket__submit" type="submit" value="Добавить" />
+      </form>
+    </div>
+  </div>
+
+  </body>
+</html>
