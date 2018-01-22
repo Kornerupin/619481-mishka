@@ -62,27 +62,27 @@
           <legend class="mishka-form__group-title">Цвет</legend>
 
           <label class="mishka-form__color">
-            <input type="checkbox" name="color" value="white" checked />Белый
+            <input class="mishka-form__color-input" type="checkbox" name="color" value="white" checked />Белый
           </label>
 
           <label class="mishka-form__color">
-            <input type="checkbox" name="color" value="gray" checked />Серый
+            <input class="mishka-form__color-input" type="checkbox" name="color" value="gray" checked />Серый
           </label>
 
           <label class="mishka-form__color">
-            <input type="checkbox" name="color" value="tiffany" />"Тиффани"
+            <input class="mishka-form__color-input" type="checkbox" name="color" value="tiffany" />"Тиффани"
           </label>
 
           <label class="mishka-form__color">
-            <input type="checkbox" name="color" value="black" />Черный
+            <input class="mishka-form__color-input" type="checkbox" name="color" value="black" />Черный
           </label>
 
           <label class="mishka-form__color">
-            <input type="checkbox" name="color" value="pink" />Розовый
+            <input class="mishka-form__color-input" type="checkbox" name="color" value="pink" />Розовый
           </label>
 
           <label class="mishka-form__color">
-            <input type="checkbox" name="color" value="orange" />Оранжевый
+            <input class="mishka-form__color-input" type="checkbox" name="color" value="orange" />Оранжевый
           </label>
         </fieldset>
 
@@ -91,23 +91,27 @@
           <legend class="mishka-form__group-title">ФИО</legend>
 
           <label class="mishka-form__name">
-            Имя:<input class="mishka-form__first-name" type="text" name="firstname" required placeholder="Введите ваше имя*" />
+            Имя:
+            <input class="mishka-form__name-input mishka-form__first-name" type="text" name="firstname" required placeholder="Введите ваше имя*" />
           </label>
 
           <label class="mishka-form__name">
-            Фамилия:<input class="mishka-form__surname" type="text" name="surname" required placeholder="Укажите фамилию*" />
+            Фамилия:
+            <input class="mishka-form__name-input mishka-form__surname" type="text" name="surname" required placeholder="Укажите фамилию*" />
           </label>
 
           <label class="mishka-form__name">
-            Отчество:<input class="mishka-form__patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете" />
+            Отчество:
+            <input class="mishka-form__name-input mishka-form__patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете" />
           </label>
         </fieldset>
 
 
         <fieldset class="mishka-form__group">
           <legend class="mishka-form__group-title">Тел</legend>
+
           <label class="mishka-form__phone">
-            <input type="tel" name="phone" placeholder="+7 (XXX) XXX XX XX*" required />
+            <input class="mishka-form__phone-input" type="tel" name="phone" placeholder="+7 (XXX) XXX XX XX*" required />
           </label>
         </fieldset>
 
@@ -116,7 +120,7 @@
           <legend class="mishka-form__group-title">E-mail</legend>
 
           <label class="mishka-form__email">
-            <input type="email" name="email" placeholder="Ваш Email*" required />
+            <input class="mishka-form__email-input" type="email" name="email" placeholder="Ваш Email*" required />
           </label>
         </fieldset>
 
