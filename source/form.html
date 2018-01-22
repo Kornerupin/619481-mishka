@@ -28,12 +28,14 @@
   <section class="mishka-form">
     <h1 class="mishka-form__title">Вязание на заказ</h1>
 
-    <p class="mishka-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    <p class="mishka-form__description">
+      Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+    </p>
 
-    <form class="mishka-form__form-list" action="https://echo.htmlacademy.ru" method="post">
+    <form class="mishka-form__form" action="https://echo.htmlacademy.ru" method="post">
 
-      <fieldset class="mishka-form__block">
-        <legend class="mishka-form__block-title">Тип</legend>
+      <fieldset class="mishka-form__group">
+        <legend class="mishka-form__group-title">Тип</legend>
 
         <label class="mishka-form__type">
           <input type="radio" name="type" value="attribute" />Аксессуар для интерьера
@@ -45,8 +47,8 @@
       </fieldset>
 
 
-      <fieldset class="mishka-form__block">
-        <legend class="mishka-form__block-title">Цвет</legend>
+      <fieldset class="mishka-form__group">
+        <legend class="mishka-form__group-title">Цвет</legend>
 
         <label class="mishka-form__color">
           <input type="checkbox" name="color" value="white" checked />Белый
@@ -74,8 +76,8 @@
       </fieldset>
 
 
-      <fieldset class="mishka-form__block">
-        <legend class="mishka-form__block-title">ФИО</legend>
+      <fieldset class="mishka-form__group">
+        <legend class="mishka-form__group-title">ФИО</legend>
 
         <label class="mishka-form__FIO">
           Имя:<input type="text" name="name" required placeholder="Введите ваше имя*" />
@@ -91,17 +93,16 @@
       </fieldset>
 
 
-      <fieldset class="mishka-form__block">
-        <legend class="mishka-form__block-title">Тел</legend>
-        <!-- Некорректная маска для телефона, код пропущен -->
+      <fieldset class="mishka-form__group">
+        <legend class="mishka-form__group-title">Тел</legend>
         <label class="mishka-form__phone">
-          <input type="tel" name="phone" placeholder="+7 XXX XX XX*" required />
+          <input type="tel" name="phone" placeholder="+7 (XXX) XXX XX XX*" required />
         </label>
       </fieldset>
 
 
-      <fieldset class="mishka-form__block">
-        <legend class="mishka-form__block-title">E-mail</legend>
+      <fieldset class="mishka-form__group">
+        <legend class="mishka-form__group-title">E-mail</legend>
 
         <label class="mishka-form__email">
           <input type="email" name="email" placeholder="Ваш Email*" required />
@@ -109,13 +110,16 @@
       </fieldset>
 
 
-      <fieldset class="mishka-form__block">
-        <legend class="mishka-form__block-title">Доп</legend>
-
-        <textarea class="mishka-form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      <fieldset class="mishka-form__group">
+        <legend class="mishka-form__group-title">Доп</legend>
+        <textarea class="mishka-form__textarea"
+                  placeholder="Опишите все ваши пожелания к заказу">
+        </textarea>
       </fieldset>
 
-      <p class="mishka-form__comment">*Поля обязательны для заполнения</p>
+      <p class="mishka-form__comment">
+        *Поля обязательны для заполнения
+      </p>
 
       <input class="mishka-form__submit" type="submit" value="Отправить заказ" />
     </form>
@@ -127,9 +131,15 @@
 <footer class="page-footer">
   <div class="page-footer__socials socials">
     <ul class="socials__list">
-      <li><a class="socials__item socials__item--instagram" href="#">Instagram</a></li>
-      <li><a class="socials__item socials__item--facebook" href="#">Facebook</a></li>
-      <li><a class="socials__item socials__item--twitter" href="#">Twitter</a></li>
+      <li>
+        <a class="socials__item socials__item--instagram" href="#">Instagram</a>
+      </li>
+      <li>
+        <a class="socials__item socials__item--facebook" href="#">Facebook</a>
+      </li>
+      <li>
+        <a class="socials__item socials__item--twitter" href="#">Twitter</a>
+      </li>
     </ul>
   </div>
 

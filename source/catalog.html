@@ -15,10 +15,20 @@
     <nav class="main-nav">
       <button class="main-nav__button-toggle" title="Открыть меню">Открыть меню</button>
       <ul class="main-nav__list">
-        <li><a class="main-nav__item main-nav__item--catalog">Каталог товаров</a></li>
-        <li><a class="main-nav__item main-nav__item--knitting" href="./form.html">Вязание на заказ</a></li>
-        <li><a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a></li>
-        <li><a class="main-nav__item main-nav__item--basket" href="#">Корзина: <span>пока пуста</span></a></li>
+        <li>
+          <a class="main-nav__item main-nav__item--catalog">Каталог товаров</a>
+        </li>
+        <li>
+          <a class="main-nav__item main-nav__item--knitting" href="./form.html">Вязание на заказ</a>
+        </li>
+        <li>
+          <a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a>
+        </li>
+        <li>
+          <a class="main-nav__item main-nav__item--basket" href="#">
+            Корзина: <span>пока пуста</span>
+          </a>
+        </li>
       </ul>
     </nav>
 
@@ -35,27 +45,33 @@
           <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
         </a>
         <p class="product-card__description">Рост 30см, вес 200г</p>
-        <div class="product-card__price"><span class="product-card__price--thousand">1</span>200 руб.</div>
+        <p class="product-card__price">
+          <span class="product-card__price--thousand">1</span>200 руб.
+        </p>
         <button type="button" class="product-card__to-basket" title="В корзину">Добавить в корзину</button>
       </article>
 
       <article class="product-card" data-id="2433235">
         <a href="#basket">
-          <img class="product-card__image" src="http://placehold.it/258x195" alt="Зайчик-попрыгайчик" />
+          <img class="product-card__image" src="http://placehold.it/258x195" alt="Корзинка для белья" />
           <h3 class="product-card__title">Корзинка для белья</h3>
         </a>
         <p class="product-card__description">Диаметр 15 см, высота 10см</p>
-        <div class="product-card__price">690 руб.</div>
+        <p class="product-card__price">
+          690 руб.
+        </p>
         <button type="button" class="product-card__to-basket" title="В корзину">Добавить в корзину</button>
       </article>
 
       <article class="product-card" data-id="2433236">
         <a href="#big-basket">
-          <img class="product-card__image" src="http://placehold.it/258x195" alt="Зайчик-попрыгайчик" />
+          <img class="product-card__image" src="http://placehold.it/258x195" alt="Большая корзинка для игрушек" />
           <h3 class="product-card__title">Большая корзинка для игрушек</h3>
         </a>
         <p class="product-card__description">Диаметр 30см, высота 30см</p>
-        <div class="product-card__price"><span class="product-card__price--thousand">1</span>500 руб.</div>
+        <p class="product-card__price">
+          <span class="product-card__price--thousand">1</span>500 руб.
+        </p>
         <button type="button" class="product-card__to-basket" title="В корзину">Добавить в корзину</button>
       </article>
     </section>
@@ -66,10 +82,14 @@
       <video  style="width:100%;" height="100" poster="video/exemple.jpg">
         <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
         <!--Надо будет попробовать вставить сюда iframe с ютуба и посмотреть, будет ли он грузиться, если загрузятся варианты выше.-->
-        <a href="http://youtube.com/my-video/video/demo.mp4">Перейдите по ссылке, чтобы посмотреть видео на ютубе.</a>.
+        <a href="http://youtube.com/my-video/video/demo.mp4">
+          Перейдите по ссылке, чтобы посмотреть видео на ютубе.
+        </a>.
       </video>
 
-      <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <p class="production-process__description">
+        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+      </p>
 
       <a href="#" class="production-process__order">Сделать заказ</a>
     </section>
@@ -79,9 +99,15 @@
   <footer class="page-footer">
     <div class="page-footer__socials socials">
       <ul class="socials__list">
-        <li><a class="socials__item socials__item--instagram" href="#">Instagram</a></li>
-        <li><a class="socials__item socials__item--facebook" href="#">Facebook</a></li>
-        <li><a class="socials__item socials__item--twitter" href="#">Twitter</a></li>
+        <li>
+          <a class="socials__item socials__item--instagram" href="#">Instagram</a>
+        </li>
+        <li>
+          <a class="socials__item socials__item--facebook" href="#">Facebook</a>
+        </li>
+        <li>
+          <a class="socials__item socials__item--twitter" href="#">Twitter</a>
+        </li>
       </ul>
     </div>
 
@@ -101,9 +127,15 @@
       <p class="add-to-basket__description">Выберите размер:</p>
 
       <form class="add-to-basket__form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="add-to-basket__item-type"><input type="radio" name="size" value="S" checked />S</label>
-        <label class="add-to-basket__item-type"><input type="radio" name="size" value="M" />M</label>
-        <label class="add-to-basket__item-type"><input type="radio" name="size" value="L" />L</label>
+        <label class="add-to-basket__item-type">
+          <input type="radio" name="size" value="S" checked /> S
+        </label>
+        <label class="add-to-basket__item-type">
+          <input type="radio" name="size" value="M" /> M
+        </label>
+        <label class="add-to-basket__item-type">
+          <input type="radio" name="size" value="L" /> L
+        </label>
         <input type="hidden" name="product-id" value="23423" />
         <input type="hidden" name="session-id" value="sd123sdfs3234" />
         <input class="add-to-basket__submit" type="submit" value="Добавить" />
