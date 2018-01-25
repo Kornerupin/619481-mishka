@@ -1,5 +1,6 @@
 .week-product {
   border: 3px solid darkgreen;
+  color: var(--color-gray-dark);
 }
 
 .week-product__title {
@@ -17,22 +18,17 @@
 }
 
 .week-product__description {
-  font-size: 15px;
   line-height: 24px;
-  color: var(--color-gray-dark);
 }
 
 .week-product__characters-item {
-  font-size: 15px;
   line-height: 24px;
-  color: var(--color-gray-dark);
 }
 
 .week-product__price {
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
-  color: var(--color-gray-dark);
 }
 
 .week-product__add-to-basket {
@@ -40,5 +36,4 @@
   line-height: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--color-gray-dark);
 }

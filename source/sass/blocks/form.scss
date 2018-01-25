@@ -1,0 +1,39 @@
+.form {
+  outline: 3px solid darkred;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.form__group-title {
+  text-transform: uppercase;
+  line-height: 16px;
+  color: var(--color-blue-darker);
+}
+
+.form__name-input {
+  color: var(--color-gray-dark);
+}
+
+.form__phone-input {
+  color: var(--color-gray-dark);
+}
+
+.form__email-input {
+  color: var(--color-gray-dark);
+}
+
+.form__textarea {
+  color: var(--color-gray-dark);
+}
+
+.form__comment {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: var(--color-gray-dark);
+}
+
+.form__submit {
+  line-height: 16px;
+} 
