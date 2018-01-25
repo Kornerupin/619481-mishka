@@ -1,0 +1,38 @@
+.top-menu {
+}
+
+.top-menu__title {
+  font-size: 27px;
+  font-weight: bold;
+  padding: 70px 35px 125px;
+  margin: 0;
+  background: url("../img/hero-mobile@1x.jpg") no-repeat center -20px;
+  text-align: center;
+}
+
+.top-menu__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-menu__link {
+  display: block;
+  width: 100%;
+  height: 105px;
+
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 24px;
+  color: $color-white;
+
+  text-decoration: none;
+}
+
+.top-menu__link--decor-item {
+  background-color: $color-blue-darker;
+}
+
+.top-menu__link--child-toys {
+  background-color: $color-blue-lighter;
+}

@@ -3,29 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
   <body>
 
   <header class="page-header">
 
     <a class="page-header__logo-link">
-      <img class="page-header__logo-image" src="http://placehold.it/320x80" alt="MISHKA" />
+      <img class="page-header__logo-image" src="../img/logo-mobile.svg" alt="MISHKA" />
     </a>
 
     <nav class="main-nav">
       <button class="main-nav__button-toggle" title="Открыть меню">Открыть меню</button>
       <ul class="main-nav__list">
         <li>
-          <a class="main-nav__item main-nav__item--catalog" href="./catalog.html">Каталог товаров</a>
+          <a class="main-nav__item-link main-nav__item-link--catalog" href="./catalog.html">Каталог товаров</a>
         </li>
         <li>
-          <a class="main-nav__item main-nav__item--knitting" href="./form.html">Вязание на заказ</a>
+          <a class="main-nav__item-link main-nav__item-link--knitting" href="./form.html">Вязание на заказ</a>
         </li>
         <li>
-          <a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a>
+          <a class="main-nav__item-link main-nav__item-link--search" href="#">Поиск по сайту</a>
         </li>
         <li>
-          <a class="main-nav__item main-nav__item--basket" href="#">
+          <a class="main-nav__item-link main-nav__item-link--basket" href="#">
             Корзина:
             <span>пока пуста</span>
           </a>
@@ -37,13 +38,13 @@
 
   <main class="page-main">
     <section class="page-main__top-menu top-menu">
-      <h1 class="top-menu__title">Милые штуки ручной работы для дома</h1>
+      <h1 class="top-menu__title">Милые штуки ручной<br /> работы для дома</h1>
       <ul class="top-menu__list">
         <li>
-          <a class="top-menu__link top-menu__link--decor-item" href="./catalog">Предметы интерьера</a>
+          <a class="top-menu__link top-menu__link--decor-item" href="./catalog.html">Предметы интерьера</a>
         </li>
         <li>
-          <a class="top-menu__link top-menu__link--child-toys" href="./catalog">Детские игрушки</a>
+          <a class="top-menu__link top-menu__link--child-toys" href="./catalog.html">Детские игрушки</a>
         </li>
       </ul>
     </section>
@@ -72,7 +73,7 @@
         </tr>
       </table>
 
-      <img class="week-product__image" src="http://placehold.it/260x315" alt="" />
+      <img class="week-product__image" src="../img/triple-set-mobile@1x.jpg" alt="" />
 
       <p class="week-product__price">
         Цена
@@ -84,7 +85,7 @@
     </section>
 
     <section class="page-main__about about">
-      <h2 class="about_title">Коротко о нас:</h2>
+      <h2 class="about__title">Коротко о нас:</h2>
 
       <p class="about__item-description">
         Экологически чистые материалы
@@ -116,7 +117,7 @@
       <h2 class="reviews__title">Отзывы</h2>
 
       <article class="reviews__item">
-        <h3 class="reviews__item-title hide">Отзыв от Анастасии</h3>
+        <h3 class="reviews__item-title visually-hidden">Отзыв от Анастасии</h3>
         <p class="reviews__text">
           Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
         </p>
@@ -138,9 +139,9 @@
       <h2 class="contacts__title">Контакты</h2>
       <p class="contacts__e-mail">
         <span>e-mail:</span>
-        <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        <a class="contacts__e-mail-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
       </p>
-      <p class="contacts__adress">
+      <p class="contacts__address">
         <span>адрес:</span> г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
       </p>
       <iframe
@@ -156,17 +157,17 @@
 
   <footer class="page-footer">
     <div class="page-footer__socials socials">
-      <h2 class="socials__title hide">Мы в соц.сетях</h2>
+      <h2 class="socials__title visually-hidden">Мы в соц.сетях</h2>
 
       <ul class="socials__list">
         <li>
-          <a class="socials__item socials__item--instagram" href="#">Instagram</a>
+          <a class="socials__item-link socials__item-link--instagram" href="#">Instagram</a>
         </li>
         <li>
-          <a class="socials__item socials__item--facebook" href="#">Facebook</a>
+          <a class="socials__item-link socials__item-link--facebook" href="#">Facebook</a>
         </li>
         <li>
-          <a class="socials__item socials__item--twitter" href="#">Twitter</a>
+          <a class="socials__item-link socials__item-link--twitter" href="#">Twitter</a>
         </li>
       </ul>
     </div>
@@ -182,7 +183,7 @@
 
   <div class="popup">
 
-    <div class="popup__content add-to-basket hide">
+    <div class="popup__content add-to-basket visually-hidden">
       <h2 class="popup__title">Добавить в корзину</h2>
 
       <p class="add-to-basket__description">Выберите размер:</p>
@@ -197,8 +198,8 @@
         <label class="add-to-basket__item-type">
           <input type="radio" name="size" value="L" /> L
         </label>
-        <input type="hidden" name="product-id" value="23423" />
-        <input type="hidden" name="session-id" value="sd123sdfs3234" />
+        <input type="visually-hidden" name="product-id" value="23423" />
+        <input type="visually-hidden" name="session-id" value="sd123sdfs3234" />
         <input class="add-to-basket__submit" type="submit" value="Добавить" />
       </form>
     </div>

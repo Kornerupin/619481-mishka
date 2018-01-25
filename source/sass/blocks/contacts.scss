@@ -1,0 +1,29 @@
+.contacts {
+}
+
+.contacts__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contacts__e-mail {
+  color: $color-gray-dark;
+}
+
+.contacts__e-mail-link {
+  text-decoration: none;
+  color: $color-gray-dark;
+  border-bottom: 1px solid $color-blue;
+}
+
+.contacts__address {
+  color: $color-gray-dark;
+}
+
+.contacts__write {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-gray-dark;
+}

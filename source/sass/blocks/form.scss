@@ -1,0 +1,38 @@
+.form {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.form__group-title {
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-blue-darker;
+}
+
+.form__name-input {
+  color: $color-gray-dark;
+}
+
+.form__phone-input {
+  color: $color-gray-dark;
+}
+
+.form__email-input {
+  color: $color-gray-dark;
+}
+
+.form__textarea {
+  color: $color-gray-dark;
+}
+
+.form__comment {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 16px;
+  color: $color-gray-dark;
+}
+
+.form__submit {
+  line-height: 16px;
+}

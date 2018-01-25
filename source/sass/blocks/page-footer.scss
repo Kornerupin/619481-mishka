@@ -1,0 +1,15 @@
+.page-footer {
+  background-color: $color-gray-light;
+}
+
+.page-footer__developer {
+  line-height: 0;
+}
+
+.page-footer__developer-link {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 18px;
+  text-decoration: none;
+  color: $color-black;
+}

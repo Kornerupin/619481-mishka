@@ -1,0 +1,37 @@
+.week-product {
+  color: $color-gray-dark;
+}
+
+.week-product__title {
+  font-size: 25px;
+  color: $color-black;
+}
+
+.week-product__status {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-blue-darker;
+}
+
+.week-product__description {
+  line-height: 24px;
+}
+
+.week-product__characters-item {
+  line-height: 24px;
+}
+
+.week-product__price {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.week-product__add-to-basket {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+}

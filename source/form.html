@@ -3,29 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
   </head>
   <body>
 
   <header class="page-header">
 
     <a class="page-header__logo-link" href="./index.html">
-      <img class="page-header__logo-image" src="http://placehold.it/320x80" alt="MISHKA" />
+      <img class="page-header__logo-image" src="../img/logo-mobile.svg" alt="MISHKA" />
     </a>
 
     <nav class="main-nav">
       <button class="main-nav__button-toggle" title="Открыть меню">Открыть меню</button>
       <ul class="main-nav__list">
         <li>
-          <a class="main-nav__item main-nav__item--catalog" href="./catalog.html">Каталог товаров</a>
+          <a class="main-nav__item-link main-nav__item-link--catalog" href="./catalog.html">Каталог товаров</a>
         </li>
         <li>
-          <a class="main-nav__item main-nav__item--knitting">Вязание на заказ</a>
+          <a class="main-nav__item-link main-nav__item-link--knitting">Вязание на заказ</a>
         </li>
         <li>
-          <a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a>
+          <a class="main-nav__item-link main-nav__item-link--search" href="#">Поиск по сайту</a>
         </li>
         <li>
-          <a class="main-nav__item main-nav__item--basket" href="#">
+          <a class="main-nav__item-link main-nav__item-link--basket" href="#">
             Корзина:
             <span>пока пуста</span>
           </a></li>
@@ -42,17 +44,17 @@
     </p>
 
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
-      <h2 class="form__title hide">Форма заказа</h2>
+      <h2 class="form__title visually-hidden">Форма заказа</h2>
 
       <fieldset class="form__group">
         <legend class="form__group-title">Тип</legend>
 
         <label class="form__type">
-          <input type="radio" name="type" value="attribute" />Аксессуар для интерьера
+          <input class="form__type-input" type="radio" name="type" value="attribute" checked />Аксессуар для интерьера
         </label>
 
         <label class="form__type">
-          <input type="radio" name="type" value="toy" />Детская игрушка
+          <input class="form__type-input" type="radio" name="type" value="toy" />Детская игрушка
         </label>
       </fieldset>
 
@@ -142,17 +144,17 @@
 
   <footer class="page-footer">
     <div class="page-footer__socials socials">
-      <h2 class="socials__title hide">Мы в соц.сетях</h2>
+      <h2 class="socials__title visually-hidden">Мы в соц.сетях</h2>
 
       <ul class="socials__list">
         <li>
-          <a class="socials__item socials__item--instagram" href="#">Instagram</a>
+          <a class="socials__item-link socials__item-link--instagram" href="#">Instagram</a>
         </li>
         <li>
-          <a class="socials__item socials__item--facebook" href="#">Facebook</a>
+          <a class="socials__item-link socials__item-link--facebook" href="#">Facebook</a>
         </li>
         <li>
-          <a class="socials__item socials__item--twitter" href="#">Twitter</a>
+          <a class="socials__item-link socials__item-link--twitter" href="#">Twitter</a>
         </li>
       </ul>
     </div>

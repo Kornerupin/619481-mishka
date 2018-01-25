@@ -1,0 +1,29 @@
+.reviews {
+}
+
+.reviews__title {
+  font-size: 25px;
+}
+
+.reviews__text {
+  color: $color-gray-dark;
+}
+
+.reviews__author {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.reviews__author-contact {
+  font-size: 17px;
+  color: $color-gray-dark;
+}
+
+.reviews__new-message {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-gray-dark;
+}
