@@ -1,5 +1,4 @@
 .top-menu {
-  outline: 3px solid darkred;
 }
 
 .top-menu__title {
@@ -30,10 +29,10 @@
   text-decoration: none;
 }
 
-.top-menu__link$decor-item {
+.top-menu__link--decor-item {
   background-color: $color-blue-darker;
 }
 
-.top-menu__link$child-toys {
+.top-menu__link--child-toys {
   background-color: $color-blue-lighter;
 }

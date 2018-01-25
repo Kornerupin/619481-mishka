@@ -1,6 +1,9 @@
 .page-footer {
   background-color: $color-gray-light;
-  outline: 3px solid darkgreen;
+}
+
+.page-footer__developer {
+  line-height: 0;
 }
 
 .page-footer__developer-link {

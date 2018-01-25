@@ -2,36 +2,35 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 18px;
-  outline: 3px solid darkred;
 }
 
 .form__group-title {
   line-height: 16px;
   text-transform: uppercase;
-  color: var($color-blue-darker);
+  color: $color-blue-darker;
 }
 
 .form__name-input {
-  color: var($color-gray-dark);
+  color: $color-gray-dark;
 }
 
 .form__phone-input {
-  color: var($color-gray-dark);
+  color: $color-gray-dark;
 }
 
 .form__email-input {
-  color: var($color-gray-dark);
+  color: $color-gray-dark;
 }
 
 .form__textarea {
-  color: var($color-gray-dark);
+  color: $color-gray-dark;
 }
 
 .form__comment {
   font-size: 14px;
   font-weight: normal;
   line-height: 16px;
-  color: var($color-gray-dark);
+  color: $color-gray-dark;
 }
 
 .form__submit {
