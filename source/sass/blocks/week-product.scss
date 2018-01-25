@@ -1,6 +1,7 @@
 .week-product {
-  border: 3px solid darkgreen;
   color: $color-gray-dark;
+
+  border: 3px solid darkgreen;
 }
 
 .week-product__title {
@@ -10,8 +11,8 @@
 
 .week-product__status {
   font-size: 17px;
-  line-height: 20px;
   font-weight: bold;
+  line-height: 20px;
   text-transform: uppercase;
   color: $color-blue-darker;
 }
@@ -26,13 +27,13 @@
 
 .week-product__price {
   font-size: 17px;
-  line-height: 24px;
   font-weight: bold;
+  line-height: 24px;
 }
 
 .week-product__add-to-basket {
   font-size: 17px;
-  line-height: 20px;
   font-weight: bold;
+  line-height: 20px;
   text-transform: uppercase;
 }
