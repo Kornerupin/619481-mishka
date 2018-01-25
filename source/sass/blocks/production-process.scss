@@ -1,0 +1,22 @@
+.production-process {
+  line-height: 24px;
+  outline: 3px solid darkred;
+}
+
+.production-process__title {
+  font-size: 17px;
+}
+
+.product-card__description {
+  font-size: 13px;
+  color: var(--color-black);
+}
+
+.production-process__order {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+
+  color: var(--color-black);
+  text-decoration: none;
+}
