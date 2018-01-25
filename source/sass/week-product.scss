@@ -1,0 +1,44 @@
+.week-product {
+  border: 3px solid darkgreen;
+
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--color-black);
+  }
+
+  &__status {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-blue-darker);
+  }
+
+  &__description {
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--color-gray-dark);
+  }
+
+  &__characters-item {
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--color-gray-dark);
+  }
+
+  &__price {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+    color: var(--color-gray-dark);
+  }
+
+  &__add-to-basket {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-gray-dark);
+  }
+}

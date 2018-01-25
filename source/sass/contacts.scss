@@ -1,0 +1,40 @@
+.contacts {
+  border: 3px solid darkred;
+
+  &__title {
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--color-black);
+  }
+
+  &__e-mail {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: normal;
+    color: var(--color-gray-dark);
+  }
+
+  &__e-mail a {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: normal;
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-blue);
+    color: var(--color-gray-dark);
+  }
+
+  &__adress {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: normal;
+    color: var(--color-gray-dark);
+  }
+
+  &__write {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-gray-dark);
+  }
+}

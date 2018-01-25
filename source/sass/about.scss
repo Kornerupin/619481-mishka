@@ -1,0 +1,17 @@
+.about {
+  border: 3px solid darkred;
+
+  .about_title {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+    color: var(--color-black);
+  }
+
+  &__item-description {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    color: var(--color-black);
+  }
+}

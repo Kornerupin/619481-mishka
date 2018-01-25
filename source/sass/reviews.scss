@@ -1,0 +1,40 @@
+.reviews {
+  border: 3px solid darkgreen;
+
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--color-black);
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: normal;
+    color: var(--color-gray-dark);
+  }
+
+  &__author {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+    color: var(--color-black);
+  }
+
+  &__author-contact {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: normal;
+    color: var(--color-gray-dark);
+  }
+
+  &__new-message {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-gray-dark);
+  }
+
+
+}

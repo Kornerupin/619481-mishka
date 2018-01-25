@@ -1,0 +1,10 @@
+.page-footer {
+  border: 3px solid darkgreen;
+
+  &__developer-link {
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: bold;
+    color: var(--color-black);
+  }
+}
