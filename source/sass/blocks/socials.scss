@@ -1,3 +1,7 @@
+.socials {
+  padding: 0;
+}
+
 .socials__list {
   list-style-type: none;
   margin: 0;
@@ -6,4 +10,13 @@
 
 .socials__item-link {
   font-size: 0;
+}
+
+.page-footer__developer {
+  padding: 30px;
+}
+
+.page-footer__developer-link {
+  font-size: 19px;
+  line-height: 18px;
 }

@@ -6,6 +6,10 @@
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
+  padding: 70px 35px 125px;
+  margin: 0;
+  background: url("../img/hero-mobile@1x.jpg") no-repeat center -20px;
+  text-align: center;
 }
 
 .top-menu__list {
@@ -24,6 +28,12 @@
   width: 100%;
   height: 105px;
   text-decoration: none;
+}
 
-  background-color: gray;
+.top-menu__link--decor-item {
+  background-color: var(--color-blue-darker);
+}
+
+.top-menu__link--child-toys {
+  background-color: var(--color-blue-lighter);
 }
