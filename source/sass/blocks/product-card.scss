@@ -3,7 +3,7 @@
 }
 
 .product-card__link {
-  color: var(--color-black);
+  color: $color-black;
   text-decoration: none;
 }
 
@@ -14,7 +14,7 @@
 
 .product-card__description {
   font-size: 13px;
-  color: var(--color-gray-dark);
+  color: $color-gray-dark;
 }
 
 .product-card__price {

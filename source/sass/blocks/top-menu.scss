@@ -18,7 +18,7 @@
 }
 
 .top-menu__link {
-  color: var(--color-white);
+  color: $color-white;
   font-size: 19px;
   font-weight: bold;
   line-height: 24px;
@@ -29,10 +29,10 @@
   text-decoration: none;
 }
 
-.top-menu__link--decor-item {
-  background-color: var(--color-blue-darker);
+.top-menu__link$decor-item {
+  background-color: $color-blue-darker;
 }
 
-.top-menu__link--child-toys {
-  background-color: var(--color-blue-lighter);
+.top-menu__link$child-toys {
+  background-color: $color-blue-lighter;
 }

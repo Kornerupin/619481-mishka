@@ -7,7 +7,7 @@
 }
 
 .reviews__text {
-  color: var(--color-gray-dark);
+  color: $color-gray-dark;
 }
 
 .reviews__author {
@@ -18,7 +18,7 @@
 
 .reviews__author-contact {
   font-size: 17px;
-  color: var(--color-gray-dark);
+  color: $color-gray-dark;
 }
 
 .reviews__new-message {
@@ -26,5 +26,5 @@
   line-height: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--color-gray-dark);
+  color: $color-gray-dark;
 }

@@ -1,11 +1,11 @@
 .week-product {
   border: 3px solid darkgreen;
-  color: var(--color-gray-dark);
+  color: $color-gray-dark;
 }
 
 .week-product__title {
   font-size: 25px;
-  color: var(--color-black);
+  color: $color-black;
 }
 
 .week-product__status {
@@ -13,7 +13,7 @@
   line-height: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--color-blue-darker);
+  color: $color-blue-darker;
 }
 
 .week-product__description {

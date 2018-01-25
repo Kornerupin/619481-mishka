@@ -1,12 +1,12 @@
 .page-footer {
+  background-color: $color-gray-light;
   outline: 3px solid darkgreen;
-  background-color: var(--color-gray-light);
 }
 
 .page-footer__developer-link {
   font-size: 19px;
-  line-height: 18px;
   font-weight: bold;
+  line-height: 18px;
   text-decoration: none;
-  color: var(--color-black);
+  color: $color-black;
 }
