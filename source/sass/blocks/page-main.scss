@@ -12,3 +12,11 @@
   font-size: 13px;
   line-height: 24px;
 }
+
+.page-main__write {
+  @include button();
+  font-size: 18px;
+  display: block;
+  margin: 40px auto;
+  width: calc(100% - 60px);
+}

@@ -2,24 +2,32 @@
 }
 
 .top-menu__title {
-  font-size: 27px;
-  font-weight: bold;
   padding: 70px 35px 125px;
   margin: 0;
-  background: url("../img/hero-mobile@1x.jpg") no-repeat center -20px;
+
+  font-size: 27px;
+  font-weight: bold;
   text-align: center;
+
+  background: url("../img/hero-mobile@1x.jpg") no-repeat center -20px;
 }
 
 .top-menu__list {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+
+  list-style-type: none;
 }
 
 .top-menu__link {
+  position: relative;
+
   display: block;
+  box-sizing: border-box;
   width: 100%;
   height: 105px;
+  padding-top: 25px;
+  padding-left: 30px;
 
   font-size: 19px;
   font-weight: bold;
@@ -27,12 +35,34 @@
   color: $color-white;
 
   text-decoration: none;
-}
 
-.top-menu__link--decor-item {
-  background-color: $color-blue-darker;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 30px;
 
-.top-menu__link--child-toys {
-  background-color: $color-blue-lighter;
+    display: block;
+    width: 65px;
+    height: 65px;
+  }
+
+  &--decor-item {
+    background-color: $color-blue-darker;
+  }
+
+  &--decor-item::before {
+    background: url(../../img/icon-interior.svg) no-repeat center;
+    opacity: 0.2;
+  }
+
+  &--child-toys {
+    background-color: $color-blue-lighter;
+  }
+
+  &--child-toys::before {
+    background: url(../../img/icon-toy.svg) no-repeat center;
+    opacity: 0.2;
+  }
+
 }

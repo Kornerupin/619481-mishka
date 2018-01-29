@@ -3,7 +3,8 @@
 }
 
 .page-footer__developer {
-  line-height: 0;
+  padding: 0 30px;
+  text-align: center;
 }
 
 .page-footer__developer-link {
@@ -12,4 +13,19 @@
   line-height: 18px;
   text-decoration: none;
   color: $color-black;
+  display: inline-block;
+  height: 20px;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.page-footer__developer-link span {
+  position: relative;
+  top: -10px;
+}
+
+.page-footer__developer-image {
+  display: inline-block;
+  width: 30px;
+  height: 36px;
 }

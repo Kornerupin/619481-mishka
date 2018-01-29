@@ -1,4 +1,5 @@
 .contacts {
+  padding: 30px;
 }
 
 .contacts__title {
@@ -8,6 +9,19 @@
 
 .contacts__e-mail {
   color: $color-gray-dark;
+}
+
+.contacts__characters {
+  width: 100%;
+}
+
+.contacts__characters-td-title {
+  width: 30%;
+  vertical-align: top;
+}
+
+.contacts__characters-td-content {
+  width: 70%;
 }
 
 .contacts__e-mail-link {
@@ -20,10 +34,3 @@
   color: $color-gray-dark;
 }
 
-.contacts__write {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: $color-gray-dark;
-}

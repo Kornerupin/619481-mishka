@@ -1,8 +1,10 @@
 .reviews {
+  padding: 30px;
 }
 
 .reviews__title {
   font-size: 25px;
+  margin-top: 0;
 }
 
 .reviews__text {
@@ -17,13 +19,32 @@
 
 .reviews__author-contact {
   font-size: 17px;
+  font-weight: normal;
   color: $color-gray-dark;
 }
 
+.reviews__paginator {
+  display: block;
+  width: 50%;
+  height: 50px;
+  float: left;
+  box-sizing: border-box;
+  margin: 30px 0;
+
+  font-size: 0;
+
+  border: 1px solid $color-gray-light;
+
+  &--prev {
+    background: url(../../img/icon-left-arrow.svg) no-repeat center;
+  }
+
+  &--next {
+    background: url(../../img/icon-right-arrow.svg) no-repeat center;
+  }
+}
+
 .reviews__new-message {
+  @include button();
   font-size: 18px;
-  font-weight: bold;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: $color-gray-dark;
 }

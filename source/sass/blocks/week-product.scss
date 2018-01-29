@@ -1,8 +1,12 @@
 .week-product {
+  padding: 27px;
+
   color: $color-gray-dark;
 }
 
 .week-product__title {
+  margin: 0;
+
   font-size: 25px;
   color: $color-black;
 }
@@ -17,21 +21,39 @@
 
 .week-product__description {
   line-height: 24px;
+  margin: 30px 0;
+}
+
+.week-product__characters {
+  width: 100%;
+  margin: 30px 0;
+  border-collapse: collapse;
 }
 
 .week-product__characters-item {
   line-height: 24px;
+
+  & td {
+    border-bottom: 1px solid $color-gray-light;
+    padding: 7px 0;
+  }
+}
+
+.week-product__characters-td-title {
+  width: 40%;
+}
+
+.week-product__characters-td-content {
+  width: 60%;
 }
 
 .week-product__price {
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
+  text-align: center;
 }
 
 .week-product__add-to-basket {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 20px;
-  text-transform: uppercase;
+  @include button();
 }
