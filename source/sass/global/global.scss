@@ -19,6 +19,7 @@ body {
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
+  outline: 2px solid darkgreen;
 }
 
 .visually-hidden {
@@ -29,14 +30,14 @@ body {
   margin: -1px;
 }
 
-BODY > * {
-  outline: 3px dashed deeppink;
-  margin-bottom: 8px;;
-}
-BODY > * > * {
-  outline: 3px solid dodgerblue;
-  outline-offset: -4px;
-}
+//BODY > * {
+//  outline: 3px dashed deeppink;
+//  margin-bottom: 8px;;
+//}
+//BODY > * > * {
+//  outline: 3px solid dodgerblue;
+//  outline-offset: -4px;
+//}
 //BODY > * > * > * {
 //  box-shadow: inset 0 0 8px darkgreen;
 //}
