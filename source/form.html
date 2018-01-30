@@ -50,42 +50,34 @@
       <fieldset class="form__group">
         <legend class="form__group-title">Тип</legend>
 
-        <label class="form__type">
-          <input class="form__type-input" type="radio" name="type" value="attribute" checked />Аксессуар для интерьера
-        </label>
+        <input class="form__type-input" id="formTypeAttribute" type="radio" name="type" value="attribute" checked />
+        <label class="form__type" for="formTypeAttribute">Аксессуар для интерьера</label>
 
-        <label class="form__type">
-          <input class="form__type-input" type="radio" name="type" value="toy" />Детская игрушка
-        </label>
+        <input class="form__type-input" id="formTypeToy" type="radio" name="type" value="toy" />
+        <label class="form__type" for="formTypeToy">Детская игрушка</label>
       </fieldset>
 
 
       <fieldset class="form__group">
         <legend class="form__group-title">Цвет</legend>
 
-        <label class="form__color">
-          <input class="form__color-input" type="checkbox" name="color" value="white" checked />Белый
-        </label>
+        <input class="form__color-input" id="formColorWhite" type="checkbox" name="color" value="white" checked />
+        <label class="form__color" for="formColorWhite">Белый</label>
 
-        <label class="form__color">
-          <input class="form__color-input" type="checkbox" name="color" value="gray" checked />Серый
-        </label>
+        <input class="form__color-input" id="formColorGray" type="checkbox" name="color" value="gray" checked />
+        <label class="form__color" for="formColorGray">Серый</label>
 
-        <label class="form__color">
-          <input class="form__color-input" type="checkbox" name="color" value="tiffany" />"Тиффани"
-        </label>
+        <input class="form__color-input" id="formColorTiffany" type="checkbox" name="color" value="tiffany" />
+        <label class="form__color" for="formColorTiffany">&#171;Тиффани&#187;</label>
 
-        <label class="form__color">
-          <input class="form__color-input" type="checkbox" name="color" value="black" />Черный
-        </label>
+        <input class="form__color-input" id="formColorBlack" type="checkbox" name="color" value="black" />
+        <label class="form__color" for="formColorBlack">Черный</label>
 
-        <label class="form__color">
-          <input class="form__color-input" type="checkbox" name="color" value="pink" />Розовый
-        </label>
+        <input class="form__color-input" id="formColorPink" type="checkbox" name="color" value="pink" />
+        <label class="form__color" for="formColorPink">Розовый</label>
 
-        <label class="form__color">
-          <input class="form__color-input" type="checkbox" name="color" value="orange" />Оранжевый
-        </label>
+        <input class="form__color-input" id="formColorOrange" type="checkbox" name="color" value="orange" />
+        <label class="form__color" for="formColorOrange">Оранжевый</label>
       </fieldset>
 
 
@@ -118,7 +110,7 @@
       </fieldset>
 
 
-      <fieldset class="form__group">
+      <fieldset class="form__group form__group--email">
         <legend class="form__group-title">E-mail</legend>
 
         <label class="form__email">
@@ -127,11 +119,10 @@
       </fieldset>
 
 
-      <fieldset class="form__group">
+      <fieldset class="form__group form__group--textarea">
         <legend class="form__group-title">Доп</legend>
         <textarea class="form__textarea"
-                  placeholder="Опишите все ваши пожелания к заказу">
-        </textarea>
+                  placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </fieldset>
 
       <p class="form__comment">

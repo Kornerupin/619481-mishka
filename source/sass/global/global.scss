@@ -60,3 +60,14 @@ body {
   border: 2px solid $color-gray-dark;
   background-color: transparent;
 }
+
+@mixin text-input() {
+  width: 100%;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+
+  color: $color-gray-dark;
+
+  border: none;
+  border-bottom: 2px solid $color-gray-dark;
+}

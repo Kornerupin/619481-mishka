@@ -9,8 +9,12 @@
 }
 
 .page-main__description {
+  margin: 0;
+  padding: 30px;
+
   font-size: 13px;
   line-height: 24px;
+  color: $color-gray-dark;
 }
 
 .page-main__write {
