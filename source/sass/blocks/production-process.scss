@@ -7,7 +7,43 @@
 }
 
 .production-process__title {
+  position: relative;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 25px;
+  padding-left: 90px;
+
   font-size: 17px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 30px;
+
+    width: 40px;
+    height: 25px;
+
+    background: url("../../img/icon-video.svg") no-repeat center;
+  }
+}
+
+.production-process__very-bad-video {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    background: url("../../img/icon-play.svg") no-repeat center;
+  }
 }
 
 .production-process__order {
@@ -31,4 +67,5 @@
 
 .production-process__description {
   margin: 30px;
+  color: $color-gray-dark;
 }
