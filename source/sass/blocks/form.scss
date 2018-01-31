@@ -125,14 +125,70 @@
   padding-top: 15px;
 }
 
+.form__phone,
+.form__email {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  height: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -45px;
+    right: 5px;
+
+    display: block;
+    width: 32px;
+    height: 30px;
+
+    background: no-repeat center;
+
+    opacity: 0.5;
+  }
+}
+
+.form__phone {
+  &::after {
+    background-image: url("../../img/icon-phone.svg");
+  }
+}
+
+.form__email {
+  &::after {
+    background-image: url("../../img/icon-mail.svg");
+  }
+}
+
 .form__phone-input {
   @include text-input();
+  width: calc(100% - 40px);
   margin-bottom: 5px;
+  padding-right: 40px;
+
+  &:hover,
+  &:focus {
+    & + label::after {
+      background-image: url("../../img/icon-phone--blue.svg");
+      opacity: 1;
+    }
+  }
 }
 
 .form__email-input {
   @include text-input();
+  width: calc(100% - 40px);
   margin-bottom: 5px;
+  padding-right: 40px;
+
+  &:hover,
+  &:focus {
+    & + label::after {
+      background-image: url("../../img/icon-mail--blue.svg");
+      opacity: 1;
+    }
+  }
 }
 
 .form__group--textarea {
