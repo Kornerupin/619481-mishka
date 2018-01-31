@@ -26,17 +26,33 @@
   display: block;
   width: 35px;
   height: 35px;
-  background: transparent no-repeat center;
+  background: no-repeat center;
+
+  &:active {
+    opacity: 0.5;
+  }
 
   &--instagram {
-    background-image: url(../../img/icon-insta.svg);
+    background-image: url("../../img/icon-insta.svg");
+
+    &:hover {
+      background-image: url("../../img/icon-insta--blue.svg");
+    }
   }
 
   &--facebook {
-    background-image: url(../../img/icon-fb.svg);
+    background-image: url("../../img/icon-fb.svg");
+
+    &:hover {
+      background-image: url("../../img/icon-fb--blue.svg");
+    }
   }
 
   &--twitter {
-    background-image: url(../../img/icon-twitter.svg);
+    background-image: url("../../img/icon-twitter.svg");
+
+    &:hover {
+      background-image: url("../../img/icon-twitter--blue.svg");
+    }
   }
 }
