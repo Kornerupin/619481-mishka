@@ -4,18 +4,17 @@
 
 .main-nav__button-toggle {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 0;
+  right: 0;
 
-  height: 14px;
-  width: 20px;
+  height: 78px;
+  width: 78px;
+  padding: 0;
 
   font-size: 0;
 
   background-color: transparent;
-  border: 2px solid $color-black;
-  border-left-width: 0;
-  border-right-width: 0;
+  border: none;
 
   transition: border 0s 0.5s linear;
 
@@ -23,44 +22,48 @@
   &::after {
     content: "";
     position: absolute;
-    left: 0;
-    top: 4px;
+    left: 29px;
 
     display: block;
-    height: 2px;
+    height: 4px;
     width: 20px;
-
-    background-color: $color-black;
-
-    transition: top 0.5s linear,
-                transform 0.5s linear;
+    margin-top: -2px;
+    border: 2px solid $color-black;
+    border-left-width: 0;
+    border-right-width: 0;
+    transition: all 0.5s,
+      height 0.5s 0.5s,
+      transform 0.5s 0.5s,
+      top 0.5s 0.5s,
+      bottom 0.5s 0.5s;
   }
 
+  &::before {
+    top: 33px;
+  }
+
+  &::after {
+    bottom: 33px;
+  }
 
   &--open {
-    border: none;
-  }
+    &::before,
+    &::after {
+      height: 0;
+      width: 24px;
+    }
 
-  &--open::before,
-  &--open::after {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 0;
+    &::before {
+      border-bottom: 0;
+      transform: rotate(-45deg);
+      top: 39px;
+    }
 
-    display: block;
-    height: 2px;
-    width: 20px;
-
-    background-color: $color-black;
-  }
-
-  &--open::before {
-    transform: rotate(45deg);
-  }
-
-  &--open::after {
-    transform: rotate(-45deg);
+    &::after {
+      border-top: 0;
+      transform: rotate(45deg);
+      bottom: 39px;
+    }
   }
 }
 
