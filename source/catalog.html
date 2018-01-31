@@ -13,7 +13,7 @@
     <nav class="main-nav">
       <ul class="main-nav__list main-nav__list--close">
         <li class="main-nav__item main-nav__item-logo">
-          <a href="/" class="main-nav__item-link main-nav__item-link--catalog">
+          <a href="/" class="main-nav__item-link main-nav__item-link--index">
             <img class="main-nav__logo-img" src="../img/logo-mobile.svg" alt="MISHKA" />
           </a>
           <button class="main-nav__button-toggle" title="Открыть меню" onclick="this.parentNode.parentNode.classList.toggle('main-nav__list--close');this.classList.toggle('main-nav__button-toggle--open')">Открыть меню</button>
@@ -46,17 +46,21 @@
       <article class="product-card" data-id="2433234">
         <img class="product-card__image" src="../img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик"/>
         <div class="product-card__text-content">
-          <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
+          <h3 class="product-card__title">
+            <a class="product-card__title-link" href="#">Зайчик-попрыгайчик</a>
+          </h3>
           <p class="product-card__description">Рост 30см, вес 200г</p>
           <p class="product-card__price">1 200 руб.</p>
-          <button type="button" class="product-card__add-to-basket" title="В корзину"></button>
+          <button class="product-card__add-to-basket" type="button" title="В корзину"></button>
         </div>
       </article>
 
       <article class="product-card" data-id="2433235">
         <img class="product-card__image" src="../img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья"/>
         <div class="product-card__text-content">
-          <h3 class="product-card__title">Корзинка для белья</h3>
+          <h3 class="product-card__title">
+            <a class="product-card__title-link" href="#">Корзинка для белья</a>
+          </h3>
           <p class="product-card__description">Диаметр 15 см, высота 10см</p>
           <p class="product-card__price">690 руб.</p>
           <button type="button" class="product-card__add-to-basket" title="В корзину"></button>
@@ -66,7 +70,9 @@
       <article class="product-card" data-id="2433236">
         <img class="product-card__image" src="../img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек"/>
         <div class="product-card__text-content">
-          <h3 class="product-card__title">Большая корзинка для игрушек</h3>
+          <h3 class="product-card__title">
+            <a class="product-card__title-link" href="#">Большая корзинка для игрушек</a>
+          </h3>
           <p class="product-card__description">Диаметр 30см, высота 30см</p>
           <p class="product-card__price">1 500 руб.</p>
           <button type="button" class="product-card__add-to-basket" title="В корзину"></button>
@@ -77,7 +83,7 @@
     <section class="page-main__production-process production-process">
       <h2 class="production-process__title">Процесс производства</h2>
 
-      <div class="production-process__very-bad-video">
+      <div class="production-process__wrapper-video">
         <video class="production-process__video" style="width:100%;" width="320" poster="../img/video-mobile@1x.jpg">
           <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
           <!--Надо будет попробовать вставить сюда iframe с ютуба и посмотреть, будет ли он грузиться, если загрузятся варианты выше.-->
@@ -115,8 +121,8 @@
 
     <div class="page-footer__developer">
       <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span>Разработано</span>
-        <img class="page-footer__developer-image" src="./img/logo-htmlacademy.svg" alt="HTML Academy"/>
+        <span class="page-footer__developer-text">Разработано</span>
+        <img class="page-footer__developer-image" src="./img/logo-htmlacademy.svg" alt="HTML Academy" />
       </a>
     </div>
 
@@ -139,8 +145,8 @@
         <label class="add-to-basket__item-type">
           <input type="radio" name="size" value="L"/> L
         </label>
-        <input type="visually-hidden" name="product-id" value="23423"/>
-        <input type="visually-hidden" name="session-id" value="sd123sdfs3234"/>
+        <input type="hidden" name="product-id" value="23423"/>
+        <input type="hidden" name="session-id" value="sd123sdfs3234"/>
         <input class="add-to-basket__submit" type="submit" value="Добавить"/>
       </form>
     </div>

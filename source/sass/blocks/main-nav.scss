@@ -66,6 +66,14 @@
   }
 }
 
+.main-nav__item-link--index {
+  height: 56px;
+  padding-left: 0;
+  padding-top: 22px;
+
+  text-align: center;
+}
+
 .main-nav__item-link--search {
   &::before {
     background: url("../../img/icon-search.svg") no-repeat center;
@@ -98,14 +106,6 @@
     background-image: url("../../img/icon-cart--blue.svg");
     opacity: 0.5;
   }
-}
-
-.main-nav__item-logo .main-nav__item-link {
-  height: 56px;
-  padding-left: 0;
-  padding-top: 22px;
-
-  text-align: center;
 }
 
 .main-nav__button-toggle {
