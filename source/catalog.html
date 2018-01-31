@@ -1,150 +1,150 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
 
-</head>
-<body>
+  </head>
+  <body>
 
-<header class="page-header">
+  <header class="page-header">
 
-  <nav class="main-nav">
-    <ul class="main-nav__list main-nav__list--close">
-      <li class="main-nav__list-item main-nav__item-logo">
-        <a href="/" class="main-nav__item-link main-nav__item-link--catalog">
-          <img class="main-nav__logo-img" src="../img/logo-mobile.svg" alt="MISHKA"/>
-        </a>
-        <button class="main-nav__button-toggle" title="Открыть меню" onclick="this.parentNode.parentNode.classList.toggle('main-nav__list--close');this.classList.toggle('main-nav__button-toggle--open')">Открыть меню</button>
-      </li>
-      <li class="main-nav__list-item">
-        <a class="main-nav__item-link main-nav__item-link--catalog" href="./catalog.html">Каталог товаров</a>
-      </li>
-      <li class="main-nav__list-item">
-        <a class="main-nav__item-link main-nav__item-link--knitting" href="./form.html">Вязание на заказ</a>
-      </li>
-      <li class="main-nav__list-item">
-        <a class="main-nav__item-link main-nav__item-link--search" href="#">Поиск по сайту</a>
-      </li>
-      <li class="main-nav__list-item">
-        <a class="main-nav__item-link main-nav__item-link--basket" href="#">
-          Корзина:
-          <span>пока пуста</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</header>
+    <nav class="main-nav">
+      <ul class="main-nav__list main-nav__list--close">
+        <li class="main-nav__item main-nav__item-logo">
+          <a href="/" class="main-nav__item-link main-nav__item-link--catalog">
+            <img class="main-nav__logo-img" src="../img/logo-mobile.svg" alt="MISHKA" />
+          </a>
+          <button class="main-nav__button-toggle" title="Открыть меню" onclick="this.parentNode.parentNode.classList.toggle('main-nav__list--close');this.classList.toggle('main-nav__button-toggle--open')">Открыть меню</button>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link main-nav__item-link--catalog" href="./catalog.html">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link main-nav__item-link--knitting" href="./form.html">Вязание на заказ</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link main-nav__item-link--search" href="#">Поиск по сайту</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link main-nav__item-link--basket" href="#">
+            Корзина:
+            <span>пока пуста</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-<main class="page-main">
-  <h1 class="page-main__title">Каталог товаров</h1>
+  <main class="page-main">
+    <h1 class="page-main__title">Каталог товаров</h1>
 
-  <section class="page-main__catalog catalog">
-    <h2 class="catalog__title visually-hidden">Товары</h2>
+    <section class="page-main__catalog catalog">
+      <h2 class="catalog__title visually-hidden">Товары</h2>
 
-    <article class="product-card" data-id="2433234">
-      <a class="product-card__link" href="#hare">
+      <article class="product-card" data-id="2433234">
         <img class="product-card__image" src="../img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик"/>
-        <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
-      </a>
-      <p class="product-card__description">Рост 30см, вес 200г</p>
-      <!--<p class="product-card__price">1 200 руб.</p>-->
-      <button type="button" class="product-card__price" title="В корзину">1 200 руб.</button>
-    </article>
+        <div class="product-card__text-content">
+          <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
+          <p class="product-card__description">Рост 30см, вес 200г</p>
+          <p class="product-card__price">1 200 руб.</p>
+          <button type="button" class="product-card__add-to-basket" title="В корзину"></button>
+        </div>
+      </article>
 
-    <article class="product-card" data-id="2433235">
-      <a class="product-card__link" href="#basket">
+      <article class="product-card" data-id="2433235">
         <img class="product-card__image" src="../img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья"/>
-        <h3 class="product-card__title">Корзинка для белья</h3>
-      </a>
-      <p class="product-card__description">Диаметр 15 см, высота 10см</p>
-      <!--<p class="product-card__price">690 руб.</p>-->
-      <button type="button" class="product-card__price" title="В корзину">690 руб.</button>
-    </article>
+        <div class="product-card__text-content">
+          <h3 class="product-card__title">Корзинка для белья</h3>
+          <p class="product-card__description">Диаметр 15 см, высота 10см</p>
+          <p class="product-card__price">690 руб.</p>
+          <button type="button" class="product-card__add-to-basket" title="В корзину"></button>
+        </div>
+      </article>
 
-    <article class="product-card" data-id="2433236">
-      <a class="product-card__link" href="#big-basket">
+      <article class="product-card" data-id="2433236">
         <img class="product-card__image" src="../img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек"/>
-        <h3 class="product-card__title">Большая корзинка для игрушек</h3>
-      </a>
-      <p class="product-card__description">Диаметр 30см, высота 30см</p>
-      <!--<p class="product-card__price">1 500 руб.</p>-->
-      <button type="button" class="product-card__price" title="В корзину">1 500 руб.</button>
-    </article>
-  </section>
+        <div class="product-card__text-content">
+          <h3 class="product-card__title">Большая корзинка для игрушек</h3>
+          <p class="product-card__description">Диаметр 30см, высота 30см</p>
+          <p class="product-card__price">1 500 руб.</p>
+          <button type="button" class="product-card__add-to-basket" title="В корзину"></button>
+        </div>
+      </article>
+    </section>
 
-  <section class="page-main__production-process production-process">
-    <h2 class="production-process__title">Процесс производства</h2>
+    <section class="page-main__production-process production-process">
+      <h2 class="production-process__title">Процесс производства</h2>
 
-    <div class="production-process__very-bad-video">
-      <video class="production-process__video" style="width:100%;" width="320" poster="../img/video-mobile@1x.jpg">
-        <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
-        <!--Надо будет попробовать вставить сюда iframe с ютуба и посмотреть, будет ли он грузиться, если загрузятся варианты выше.-->
-        <a href="http://youtube.com/my-video/video/demo.mp4">
-          Перейдите по ссылке, чтобы посмотреть видео на ютубе.
-        </a>.
-      </video>
+      <div class="production-process__very-bad-video">
+        <video class="production-process__video" style="width:100%;" width="320" poster="../img/video-mobile@1x.jpg">
+          <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+          <!--Надо будет попробовать вставить сюда iframe с ютуба и посмотреть, будет ли он грузиться, если загрузятся варианты выше.-->
+          <a href="http://youtube.com/my-video/video/demo.mp4">
+            Перейдите по ссылке, чтобы посмотреть видео на ютубе.
+          </a>.
+        </video>
+      </div>
+
+      <p class="production-process__description">
+        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+      </p>
+
+      <a href="#" class="production-process__order">Сделать заказ</a>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__socials socials">
+      <h2 class="socials__title visually-hidden">Мы в соц.сетях</h2>
+
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a class="socials__item-link socials__item-link--instagram" href="#">Instagram</a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__item-link socials__item-link--facebook" href="#">Facebook</a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__item-link socials__item-link--twitter" href="#">Twitter</a>
+        </li>
+      </ul>
     </div>
 
-    <p class="production-process__description">
-      По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-    </p>
+    <div class="page-footer__developer">
+      <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span>Разработано</span>
+        <img class="page-footer__developer-image" src="./img/logo-htmlacademy.svg" alt="HTML Academy"/>
+      </a>
+    </div>
 
-    <a href="#" class="production-process__order">Сделать заказ</a>
-  </section>
+  </footer>
 
-</main>
+  <div class="popup">
 
-<footer class="page-footer">
-  <div class="page-footer__socials socials">
-    <h2 class="socials__title visually-hidden">Мы в соц.сетях</h2>
+    <div class="popup__content add-to-basket visually-hidden">
+      <h2 class="add-to-basket__title">Добавить в корзину</h2>
 
-    <ul class="socials__list">
-      <li class="socials__item">
-        <a class="socials__item-link socials__item-link--instagram" href="#">Instagram</a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__item-link socials__item-link--facebook" href="#">Facebook</a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__item-link socials__item-link--twitter" href="#">Twitter</a>
-      </li>
-    </ul>
+      <p class="add-to-basket__description">Выберите размер:</p>
+
+      <form class="add-to-basket__form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="add-to-basket__item-type">
+          <input type="radio" name="size" value="S" checked/> S
+        </label>
+        <label class="add-to-basket__item-type">
+          <input type="radio" name="size" value="M"/> M
+        </label>
+        <label class="add-to-basket__item-type">
+          <input type="radio" name="size" value="L"/> L
+        </label>
+        <input type="visually-hidden" name="product-id" value="23423"/>
+        <input type="visually-hidden" name="session-id" value="sd123sdfs3234"/>
+        <input class="add-to-basket__submit" type="submit" value="Добавить"/>
+      </form>
+    </div>
   </div>
 
-  <div class="page-footer__developer">
-    <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
-      <span>Разработано</span>
-      <img class="page-footer__developer-image" src="./img/logo-htmlacademy.svg" alt="HTML Academy"/>
-    </a>
-  </div>
-
-</footer>
-
-<div class="popup">
-
-  <div class="popup__content add-to-basket visually-hidden">
-    <h2 class="add-to-basket__title">Добавить в корзину</h2>
-
-    <p class="add-to-basket__description">Выберите размер:</p>
-
-    <form class="add-to-basket__form" action="https://echo.htmlacademy.ru" method="post">
-      <label class="add-to-basket__item-type">
-        <input type="radio" name="size" value="S" checked/> S
-      </label>
-      <label class="add-to-basket__item-type">
-        <input type="radio" name="size" value="M"/> M
-      </label>
-      <label class="add-to-basket__item-type">
-        <input type="radio" name="size" value="L"/> L
-      </label>
-      <input type="visually-hidden" name="product-id" value="23423"/>
-      <input type="visually-hidden" name="session-id" value="sd123sdfs3234"/>
-      <input class="add-to-basket__submit" type="submit" value="Добавить"/>
-    </form>
-  </div>
-</div>
-
-</body>
+  </body>
 </html>

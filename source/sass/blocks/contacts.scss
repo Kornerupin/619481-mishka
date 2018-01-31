@@ -11,20 +11,20 @@
   color: $color-gray-dark;
 }
 
-.contacts__characters {
+.contacts__table-info {
   width: 100%;
 }
 
-.contacts__characters-td-title {
+.table-info__title {
   width: 30%;
   vertical-align: top;
 }
 
-.contacts__characters-td-content {
+.table-info__content {
   width: 70%;
 }
 
-.contacts__e-mail-link {
+.table-info__e-mail-link {
   text-decoration: none;
   color: $color-gray-dark;
 
@@ -38,8 +38,4 @@
     color: $color-blue;
     opacity: 0.5;
   }
-}
-
-.contacts__address {
-  color: $color-gray-dark;
 }
