@@ -55,10 +55,22 @@ body {
   font-weight: bold;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: $color-gray-dark;
 
   border: 2px solid $color-gray-dark;
   background-color: transparent;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-gray-dark;
+    color: $color-white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @mixin text-input() {

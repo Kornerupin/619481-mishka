@@ -47,21 +47,15 @@
 }
 
 .production-process__order {
+  @include button();
+
   display: block;
   width: calc(100% - 60px);
-  height: 50px;
-  margin: 30px;
   padding-top: 16px;
-  box-sizing: border-box;
+  margin: 30px;
 
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 17px;
   font-weight: bold;
   line-height: 16px;
-  color: $color-black;
-
-  border: 2px solid $color-gray-dark;
   text-decoration: none;
 }
 

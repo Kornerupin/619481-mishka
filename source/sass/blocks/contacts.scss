@@ -27,7 +27,17 @@
 .contacts__e-mail-link {
   text-decoration: none;
   color: $color-gray-dark;
+
   border-bottom: 1px solid $color-blue;
+
+  &:hover {
+    color: $color-blue;
+  }
+
+  &:active {
+    color: $color-blue;
+    opacity: 0.5;
+  }
 }
 
 .contacts__address {
