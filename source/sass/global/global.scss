@@ -64,8 +64,9 @@ body {
   cursor: pointer;
 
   &:hover {
-    background-color: $color-gray-dark;
     color: $color-white;
+
+    background-color: $color-gray-dark;
   }
 
   &:active {

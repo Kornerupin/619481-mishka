@@ -4,9 +4,9 @@
 
 .socials__list {
   display: flex;
+  justify-content: center;
   margin: 0;
   padding: 25px 0;
-  justify-content: center;
 
   list-style-type: none;
 
@@ -22,10 +22,12 @@
 }
 
 .socials__item-link {
-  font-size: 0;
   display: block;
   width: 35px;
   height: 35px;
+
+  font-size: 0;
+
   background: no-repeat center;
 
   &:active {

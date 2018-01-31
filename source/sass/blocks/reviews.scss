@@ -3,8 +3,9 @@
 }
 
 .reviews__title {
-  font-size: 25px;
   margin-top: 0;
+
+  font-size: 25px;
 }
 
 .reviews__text {
@@ -25,18 +26,18 @@
 
 .reviews__control {
   position: relative;
-  float: left;
 
-  box-sizing: border-box;
   display: block;
+  float: left;
+  box-sizing: border-box;
   width: 50%;
   height: 50px;
   margin: 30px 0;
 
   font-size: 0;
 
-  border: 1px solid $color-gray-light;
   background-color: $color-white;
+  border: 1px solid $color-gray-light;
 
   cursor: pointer;
 

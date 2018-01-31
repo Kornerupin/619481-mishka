@@ -1,5 +1,6 @@
 .product-card {
   margin: 30px;
+
   border: 1px solid $color-gray-light;
 }
 
@@ -8,9 +9,10 @@
 }
 
 .product-card__title {
+  margin: 20px 30px;
+
   font-size: 17px;
   line-height: 24px;
-  margin: 20px 30px;
 }
 
 .product-card__description {
@@ -32,9 +34,9 @@
   font-weight: bold;
   text-align: left;
 
+  background: transparent;
   border: none;
   border-top: 1px solid $color-gray-light;
-  background: transparent;
 
   &:hover {
     background-color: $color-gray-light;
