@@ -6,6 +6,13 @@
   border: 1px solid $color-gray-light;
 }
 
+@media screen and (min-width: 767px) {
+  .production-process {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .production-process__title {
   position: relative;
 
@@ -26,6 +33,12 @@
     height: 25px;
 
     background: url("../../img/icon-video.svg") no-repeat center;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .production-process__wrapper-video {
+    order: -1;
   }
 }
 
