@@ -12,22 +12,31 @@
 
     <nav class="main-nav">
       <ul class="main-nav__list main-nav__list--close">
-        <li class="main-nav__item main-nav__item-logo">
-          <a href="/" class="main-nav__item-link main-nav__item-link--index">
+        <li class="main-nav__item main-nav__item--logo">
+          <a class="main-nav__item-link main-nav__item-link--logo">
             <img class="main-nav__logo-img" src="../img/logo-mobile.svg" alt="MISHKA" />
           </a>
           <button class="main-nav__button-toggle" title="Открыть меню" onclick="this.parentNode.parentNode.classList.toggle('main-nav__list--close');this.classList.toggle('main-nav__button-toggle--open')">Открыть меню</button>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--catalog">
           <a class="main-nav__item-link main-nav__item-link--catalog" href="./catalog.html">Каталог товаров</a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--knitting">
           <a class="main-nav__item-link main-nav__item-link--knitting" href="./form.html">Вязание на заказ</a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--search">
           <a class="main-nav__item-link main-nav__item-link--search" href="#">Поиск по сайту</a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--new main-nav__item--desktop">
+          <a class="main-nav__item-link main-nav__item-link--new" href="#">Новые поступления</a>
+        </li>
+        <li class="main-nav__item main-nav__item--sale main-nav__item--desktop">
+          <a class="main-nav__item-link main-nav__item-link--sale" href="#">Распродажа</a>
+        </li>
+        <li class="main-nav__item main-nav__item--delivery main-nav__item--tablet">
+          <a class="main-nav__item-link main-nav__item-link--delivery" href="#">Бесплатная доставка по России</a>
+        </li>
+        <li class="main-nav__item main-nav__item--basket">
           <a class="main-nav__item-link main-nav__item-link--basket" href="#">
             Корзина:
             <span>пока пуста</span>
