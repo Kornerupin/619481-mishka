@@ -77,6 +77,14 @@
   position: relative;
 }
 
+.main-nav__item-link--logo {
+  display: flex;
+  padding: 0;
+  height: 78px;
+  justify-content: center;
+}
+
+
 @media screen and (max-width: 767px) {
   .main-nav__list {
     flex-direction: column;
@@ -109,11 +117,7 @@
   }
 
   .main-nav__item-link--logo {
-    height: 56px;
-    padding-left: 0;
-    padding-top: 22px;
-
-    text-align: center;
+    display: flex;
   }
 
   .main-nav__button-toggle {
@@ -389,7 +393,7 @@
     order: 3;
     width: 240px;
     flex-grow: 1;
-    padding: 0 calc(50% - 520px) 0 calc(50% - 576px);
+    padding: 0 calc(50% - 528px) 0 calc(50% - 576px);
     border-bottom: 1px solid $color-gray-light;
   }
 
