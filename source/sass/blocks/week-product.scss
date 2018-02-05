@@ -34,20 +34,20 @@
 
 .week-product__characters-item {
   line-height: 24px;
-
-  & td {
-    padding: 7px 0;
-
-    border-bottom: 1px solid $color-gray-light;
-  }
 }
 
 .week-product__param {
   width: 40%;
+  padding: 7px 0;
+
+  border-bottom: 1px solid $color-gray-light;
 }
 
 .week-product__content {
   width: 60%;
+  padding: 7px 0;
+
+  border-bottom: 1px solid $color-gray-light;
 }
 
 .week-product__price {
