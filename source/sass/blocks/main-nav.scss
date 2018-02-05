@@ -190,7 +190,7 @@
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1249px) {
+@media screen and (min-width: 768px) and (max-width: 1149px) {
   .main-nav__list {
     list-style-type: none;
     margin: 0;
@@ -279,7 +279,7 @@
     order: 4;
     height: 60px;
     width: 200px;
-    background-color: lighten($color-gray-dark, 71%);
+    background-color: $color-gray-lighten;
   }
 
   .main-nav__item-link--catalog {
@@ -297,7 +297,7 @@
     height: 60px;
     width: 175px;
 
-    background-color: lighten($color-gray-dark, 71%);
+    background-color: $color-gray-lighten;
   }
 
   .main-nav__item-link--knitting {
@@ -317,7 +317,7 @@
     width: 300px;
 
 
-    background-color: lighten($color-gray-dark, 71%);
+    background-color: $color-gray-lighten;
   }
 
   .main-nav__item-link--delivery {
@@ -340,7 +340,7 @@
 }
 
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1150px) {
   .main-nav__list {
     list-style-type: none;
     margin: 0;
@@ -388,7 +388,8 @@
   .main-nav__item--logo {
     order: 3;
     width: 240px;
-    padding: 0 calc(50% - 519px) 0 calc(50% - 576px);
+    flex-grow: 1;
+    padding: 0 calc(50% - 520px) 0 calc(50% - 576px);
     border-bottom: 1px solid $color-gray-light;
   }
 
@@ -430,7 +431,7 @@
     order: 6;
     height: 60px;
     width: 226px;
-    background-color: lighten($color-gray-dark, 71%);
+    background-color: $color-gray-lighten;
   }
 
   .main-nav__item-link--new {
@@ -444,7 +445,7 @@
   .main-nav__item--sale {
     order: 7;
     height: 60px;
-    background-color: lighten($color-gray-dark, 71%);
+    background-color: $color-gray-lighten;
     flex-grow: 1;
   }
 
@@ -463,7 +464,7 @@
     width: 300px;
 
 
-    background-color: lighten($color-gray-dark, 71%);
+    background-color: $color-gray-lighten;
   }
 
   .main-nav__item-link--delivery {
