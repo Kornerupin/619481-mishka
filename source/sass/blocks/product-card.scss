@@ -108,6 +108,7 @@
 @media screen and (min-width: 767px) and (max-width: 1149px) {
   .product-card {
     display: flex;
+    margin: 50px;
   }
 
   .product-card__image {
@@ -130,15 +131,15 @@
   }
 
   .product-card__buy-wrapper {
-    margin-top: auto;
     display: flex;
+    margin-top: auto;
   }
 }
 
 @media screen and (min-width: 1150px) {
   .product-card {
     margin: 0;
-    width: 25%;
+    width: 30%;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;

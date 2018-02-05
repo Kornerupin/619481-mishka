@@ -58,7 +58,7 @@
   }
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1150px) {
   .page-main__title {
     padding-top: 35px;
     padding-bottom: 85px;
@@ -69,7 +69,8 @@
 
   .page-main__catalog {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 50px;
     padding-top: 145px;
   }
 }

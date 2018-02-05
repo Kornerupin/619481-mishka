@@ -2,13 +2,6 @@
   padding: 0 30px;
 }
 
-@media screen and (min-width: 767px) {
-  .socials {
-    width: 33%;
-    box-sizing: border-box;
-  }
-}
-
 .socials__list {
   display: flex;
   justify-content: center;
@@ -54,5 +47,16 @@
 
   &:active {
     fill: rgba($color-blue-soc, 0.4);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .socials {
+    width: 34%;
+    box-sizing: border-box;
+  }
+
+  .socials__list {
+    border: 0;
   }
 }

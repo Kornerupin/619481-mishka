@@ -2,15 +2,6 @@
   margin: 30px;
 
   line-height: 24px;
-
-  border: 1px solid $color-gray-light;
-}
-
-@media screen and (min-width: 767px) {
-  .production-process {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .production-process__title {
@@ -22,6 +13,8 @@
   padding-left: 90px;
 
   font-size: 17px;
+
+  border: 1px solid $color-gray-light;
 
   &::before {
     content: "";
@@ -36,14 +29,9 @@
   }
 }
 
-@media screen and (min-width: 767px) {
-  .production-process__wrapper-video {
-    order: -1;
-  }
-}
-
 .production-process__wrapper-video {
   position: relative;
+  line-height: 0;
 
   &::before {
     content: "";
@@ -73,6 +61,18 @@
   }
 }
 
+.production-process__description {
+  border: 1px solid $color-gray-light;
+  border-top-width: 0;
+}
+
+.production-process__text {
+  padding: 30px;
+  margin: 0;
+
+  color: $color-gray-dark;
+}
+
 .production-process__order {
   @include button();
 
@@ -86,8 +86,82 @@
   text-decoration: none;
 }
 
-.production-process__description {
-  margin: 30px;
+@media screen and (min-width: 767px) and (max-width: 1149px) {
+  .production-process {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+  }
 
-  color: $color-gray-dark;
+  .production-process__title {
+    border-bottom-width: 0;
+
+    &::before {
+      top: 24px;
+    }
+  }
+
+  .production-process__wrapper-video {
+    order: -1;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .production-process {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 465px;
+  }
+
+  .production-process__wrapper-video {
+    width: 65%;
+    height: 100%;
+    overflow: hidden;
+    order: 1;
+    outline: 5px solid red;
+  }
+
+  .production-process__video {
+    height: 100%;
+    width: 100%;
+  }
+
+  .production-process__title {
+    width: 35%;
+    height: 30%;
+    order: 2;
+    box-sizing: border-box;
+    border-bottom-width: 0;
+    font-size: 20px;
+    padding-top: 95px;
+    padding-right: calc(30% - 200px);
+    padding-left: 80px;
+
+    &::before {
+      top: 45px;
+      left: 75px;
+    }
+  }
+
+  .production-process__text {
+    margin-top: auto;
+  }
+
+  .production-process__order {
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
+
+  .production-process__description {
+    width: 35%;
+    height: 70%;
+    order: 3;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+  }
 }

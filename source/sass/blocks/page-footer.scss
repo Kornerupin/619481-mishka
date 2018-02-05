@@ -77,3 +77,27 @@
     opacity: 1;
   }
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer__developer {
+    padding-right: 50px;
+    padding-left: 0;
+  }
+
+  .page-footer__developer-link {
+    text-align: right;
+    box-sizing: border-box;
+  }
+
+  .page-footer__logo-link {
+    background: url("../../img/logo-mobile.svg") no-repeat 50px center;
+  }
+}

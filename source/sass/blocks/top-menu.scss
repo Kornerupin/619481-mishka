@@ -12,6 +12,8 @@
 }
 
 .top-menu__list {
+  position: relative;
+
   margin: 0;
   padding: 0;
 
@@ -112,14 +114,14 @@
     }
 
     &::after {
-      bottom: -16px;
+      bottom: -22px;
       left: 3px;
       height: 32px;
       background-image: radial-gradient(ellipse 3px 2px at 20px 0px, transparent 10px, white 0);
     }
 
     &::before {
-      bottom: 12px;
+      bottom: 7px;
       left: -16px;
       height: 10px;
       background-image: radial-gradient(ellipse 3px 2px at 20px 10px, white 10px, transparent 0);
