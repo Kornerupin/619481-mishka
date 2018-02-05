@@ -4,21 +4,13 @@
   border: 1px solid $color-gray-light;
 }
 
-@media screen and (min-width: 767px) {
-  .product-card {
-    display: flex;
-  }
+.product-card__buy-wrapper {
+  display: flex;
 }
 
 .product-card__image {
   width: 100%;
   display: block;
-}
-
-@media screen and (min-width: 767px) {
-  .product-card__image {
-    width: 50%;
-  }
 }
 
 .product-card__text-content {
@@ -31,23 +23,6 @@
 
   &:active {
     box-shadow: 0 3px 5px 0 rgba($color-black, 0.1);
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .product-card__text-content {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding-top: 25px;
-
-    &:hover {
-      box-shadow: 6px 0 10px 0 rgba($color-black, 0.1);
-    }
-
-    &:active {
-      box-shadow: 3px 0 5px 0 rgba($color-black, 0.1);
-    }
   }
 }
 
@@ -79,15 +54,7 @@
   color: $color-gray-dark;
 }
 
-@media screen and (min-width: 767px) {
-  .product-card__buy-wrapper {
-    margin-top: auto;
-  }
-}
-
 .product-card__price {
-  display: block;
-  float: left;
   width: calc(100% - 60px);
   padding: 20px 0;
   margin: 0;
@@ -102,7 +69,6 @@
 }
 
 .product-card__add-to-basket {
-  display: block;
   width: 60px;
   height: 65px;
 
@@ -136,5 +102,69 @@
       background-image: url("../../img/icon-cart--blue.svg");
       opacity: 0.3;
     }
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1149px) {
+  .product-card {
+    display: flex;
+  }
+
+  .product-card__image {
+    width: 50%;
+  }
+
+  .product-card__text-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 25px;
+
+    &:hover {
+      box-shadow: 6px 0 10px 0 rgba($color-black, 0.1);
+    }
+
+    &:active {
+      box-shadow: 3px 0 5px 0 rgba($color-black, 0.1);
+    }
+  }
+
+  .product-card__buy-wrapper {
+    margin-top: auto;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .product-card {
+    margin: 0;
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .product-card__image {
+    width: auto;
+    height: 460px;
+  }
+
+  .product-card__text-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .product-card__title {
+    width: 100%;
+  }
+
+  .product-card__description {
+    width: 100%;
+  }
+
+  .product-card__buy-wrapper {
+    width: 100%;
+    margin-top: auto;
   }
 }
