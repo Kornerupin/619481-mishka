@@ -14,10 +14,8 @@
   text-align: center;
 
   background-color: $color-gray-lighten;
-}
 
-@media screen and (min-width: $tablet-max) {
-  .page-main__title {
+  @media screen and (min-width: $tablet-min) {
     padding-top: 30px;
     padding-bottom: 65px;
 
@@ -56,18 +54,18 @@
       background-image: radial-gradient(ellipse 2px 1px at 30px -1px, $color-gray-lighten 14px, transparent 0);
     }
   }
-}
 
-@media screen and (min-width: $desktop-min) {
-  .page-main__title {
+  @media screen and (min-width: $desktop-min) {
     padding-top: 35px;
     padding-bottom: 85px;
 
     font-size: 53px;
     line-height: 57px;
   }
+}
 
-  .page-main__catalog {
+.page-main__catalog {
+  @media screen and (min-width: $desktop-min) {
     display: flex;
     justify-content: space-between;
     padding: 0 50px;
