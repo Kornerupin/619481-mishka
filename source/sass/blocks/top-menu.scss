@@ -9,6 +9,10 @@
   text-align: center;
 
   background: url("../../img/hero-mobile@1x.jpg") no-repeat center -20px;
+
+  @media screen and (min-width: $tablet-min) {
+    height: 565px;
+  }
 }
 
 .top-menu__list {
@@ -18,6 +22,41 @@
   padding: 0;
 
   list-style-type: none;
+
+  @media screen and (min-width: $tablet-min) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 120px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      z-index: 1;
+
+      display: block;
+
+      background-size: 38px 10px;
+      background-color: transparent;
+      background-repeat: repeat-x;
+    }
+
+    &::after {
+      bottom: -22px;
+      left: 3px;
+      height: 32px;
+      background-image: radial-gradient(ellipse 3px 2px at 20px 0, transparent 10px, white 0);
+    }
+
+    &::before {
+      bottom: 7px;
+      left: -16px;
+      height: 10px;
+      background-image: radial-gradient(ellipse 3px 2px at 20px 10px, white 10px, transparent 0);
+    }
+  }
 }
 
 .top-menu__item {
@@ -27,6 +66,16 @@
 
   &--child-toys {
     background-color: $color-blue-lighter;
+
+    @media screen and (min-width: $tablet-min) {
+      margin-left: 0;
+      margin-right: 50px;
+    }
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    width: calc(50% - 50px);
+    margin-left: 50px;
   }
 }
 
@@ -85,64 +134,12 @@
     background: url("../../img/icon-toy.svg") no-repeat center;
     opacity: 0.2;
   }
-}
 
-
-@media screen and (min-width: $tablet-min) {
-  .top-menu__title {
-    height: 565px;
-  }
-
-  .top-menu__list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 120px;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      z-index: 1;
-
-      display: block;
-
-      background-size: 38px 10px;
-      background-color: transparent;
-      background-repeat: repeat-x;
-    }
-
-    &::after {
-      bottom: -22px;
-      left: 3px;
-      height: 32px;
-      background-image: radial-gradient(ellipse 3px 2px at 20px 0, transparent 10px, white 0);
-    }
-
-    &::before {
-      bottom: 7px;
-      left: -16px;
-      height: 10px;
-      background-image: radial-gradient(ellipse 3px 2px at 20px 10px, white 10px, transparent 0);
-    }
-  }
-
-  .top-menu__item {
-    width: calc(50% - 50px);
-    margin-left: 50px;
-  }
-
-  .top-menu__link {
+  @media screen and (min-width: $tablet-min) {
     height: 120px;
 
     &:hover {
       height: 120px;
     }
-  }
-
-  .top-menu__item--child-toys {
-    margin-left: 0;
-    margin-right: 50px;
   }
 }
