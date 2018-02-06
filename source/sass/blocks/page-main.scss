@@ -16,7 +16,7 @@
   background-color: $color-gray-lighten;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet-max) {
   .page-main__title {
     padding-top: 30px;
     padding-bottom: 65px;
@@ -58,7 +58,7 @@
   }
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: $desktop-min) {
   .page-main__title {
     padding-top: 35px;
     padding-bottom: 85px;

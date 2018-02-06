@@ -1,5 +1,10 @@
 .socials {
   padding: 0 30px;
+
+  @media screen and (min-width: $tablet-min) {
+    width: 34%;
+    box-sizing: border-box;
+  }
 }
 
 .socials__list {
@@ -11,6 +16,10 @@
   list-style-type: none;
 
   border-bottom: 1px solid gray;
+
+  @media screen and (min-width: $tablet-min) {
+    border: 0;
+  }
 }
 
 .socials__item {
@@ -50,13 +59,3 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .socials {
-    width: 34%;
-    box-sizing: border-box;
-  }
-
-  .socials__list {
-    border: 0;
-  }
-}

@@ -105,7 +105,7 @@
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1149px) {
+@media screen and (min-width: $mobile-max) and (max-width: $tablet-max) {
   .product-card {
     display: flex;
     margin: 50px;
@@ -136,7 +136,7 @@
   }
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: $de) {
   .product-card {
     margin: 0;
     width: 30%;
