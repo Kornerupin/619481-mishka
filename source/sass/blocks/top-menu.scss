@@ -88,7 +88,7 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet-min) {
   .top-menu__title {
     height: 565px;
   }
@@ -117,7 +117,7 @@
       bottom: -22px;
       left: 3px;
       height: 32px;
-      background-image: radial-gradient(ellipse 3px 2px at 20px 0px, transparent 10px, white 0);
+      background-image: radial-gradient(ellipse 3px 2px at 20px 0, transparent 10px, white 0);
     }
 
     &::before {
@@ -131,7 +131,6 @@
   .top-menu__item {
     width: calc(50% - 50px);
     margin-left: 50px;
-
   }
 
   .top-menu__link {
