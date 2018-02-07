@@ -60,6 +60,11 @@
 }
 
 .top-menu__item {
+  @media screen and (min-width: $tablet-min) {
+    width: calc(50% - 50px);
+    margin-left: 50px;
+  }
+
   &--decor-thing {
     background-color: $color-blue-darker;
   }
@@ -71,11 +76,6 @@
       margin-left: 0;
       margin-right: 50px;
     }
-  }
-
-  @media screen and (min-width: $tablet-min) {
-    width: calc(50% - 50px);
-    margin-left: 50px;
   }
 }
 
