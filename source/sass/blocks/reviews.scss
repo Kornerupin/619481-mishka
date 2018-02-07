@@ -1,21 +1,81 @@
 .reviews {
   padding: 30px;
+
+  @media screen and (min-width: $tablet-min) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    background: url("../../img/review@1x.jpg") no-repeat left;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    margin: 0 100px;
+    padding: 0;
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
 }
 
 .reviews__title {
   margin-top: 0;
 
   font-size: 25px;
+
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    margin-top: 30px;
+    margin-bottom: 0;
+
+    font-size: 43px;
+    line-height: 50px;
+    order: 1;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 17%;
+    margin-bottom: 0;
+  }
+}
+
+.reviews__item {
+  @media screen and (min-width: $tablet-min) {
+    width: 100%;
+    order: 3;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    margin-left: 17%;
+  }
 }
 
 .reviews__text {
   color: $color-gray-dark;
+
+  @media screen and (min-width: $tablet-min) {
+    margin-top: 45px;
+    margin-bottom: 55px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    margin-bottom: 40px;
+  }
 }
 
 .reviews__author {
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
+  margin-bottom: 0;
+
+  @media screen and (min-width: $tablet-min) {
+    order: 4;
+    margin: 0;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    margin-left: 17%;
+  }
 }
 
 .reviews__author-contact {
@@ -32,7 +92,7 @@
   box-sizing: border-box;
   width: 50%;
   height: 50px;
-  margin: 30px 0;
+  margin: 35px 0;
 
   font-size: 0;
 
@@ -70,9 +130,32 @@
       opacity: 0.2;
     }
   }
+
+  @media screen and (min-width: $tablet-min) {
+    order: 5;
+    margin: 0;
+    width: 85px;
+    border: 0;
+
+    &--prev {
+      margin-right: 5px;
+      margin-left: auto;
+    }
+  }
 }
 
 .reviews__new-message {
   @include button();
   font-size: 18px;
+
+  @media screen and (min-width: $tablet-min) {
+    width: 175px;
+    margin-top: 30px;
+    order: 2;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    margin-top: 5px;
+  }
 }
