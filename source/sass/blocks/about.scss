@@ -1,22 +1,52 @@
 .about {
-  font-size: 17px;
   padding: 30px;
+
+  font-size: 17px;
+
+  @media screen and (min-width: $tablet-min) {
+    padding: 50px;
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    padding: 50px 100px;
+  }
 }
 
 .about__title {
-  font-size: 25px;
   margin: 0;
   margin-bottom: 30px;
+
+  font-size: 25px;
+
+  @media screen and (min-width: $tablet-min) {
+    margin-bottom: 10px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    width: 83%;
+    margin-left: 17%;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
-.about__features {
+.about__features-list {
   padding: 0;
   margin: 0;
 
   list-style-type: none;
+
+  @media screen and (min-width: $tablet-min) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.about__feature {
+.about__feature-item {
   font-weight: bold;
   line-height: 20px;
 
@@ -54,5 +84,17 @@
 
   &--gift::before {
     background-image: url("../../img/icon-feature-gift.svg");
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    width: 50%;
+    margin: 15px 0;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    &:nth-child(odd) {
+      width: 33%;
+      margin-left: 17%;
+    }
   }
 }
