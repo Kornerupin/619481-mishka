@@ -65,6 +65,11 @@
     margin-left: 50px;
   }
 
+  @media screen and (min-width: $desktop-min) {
+    width: calc(50% - 100px);
+    margin-left: 100px;
+  }
+
   &--decor-thing {
     background-color: $color-blue-darker;
   }
@@ -75,6 +80,10 @@
     @media screen and (min-width: $tablet-min) {
       margin-left: 0;
       margin-right: 50px;
+    }
+
+    @media screen and (min-width: $desktop-min) {
+      margin-right: 100px;
     }
   }
 }
