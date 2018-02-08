@@ -1,10 +1,56 @@
 .contacts {
-  padding: 30px;
+  padding: 0;
+
+  @media screen  and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    padding-top: 80px;
+  }
+
+  @media screen  and (min-width: $desktop-min) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 460px;
+    padding: 100px;
+    padding-top: 70px;
+  }
 }
 
 .contacts__title {
+  padding: 0 30px;
+
   font-size: 18px;
   font-weight: bold;
+
+  @media screen  and (min-width: $tablet-min) {
+    position: relative;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: -115px;
+
+      display: block;
+      height: 85px;
+      width: 55px;
+
+      background: url("../../img/icon-flag.svg") no-repeat center;
+    }
+  }
+
+  @media screen  and (min-width: $desktop-min) {
+    width: 33%;
+    padding: 0;
+    margin-top: 70px;
+    margin-left: 17%;
+    margin-bottom: 45px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .contacts__e-mail {
@@ -13,10 +59,30 @@
 
 .contacts__table-info {
   width: 100%;
+  padding: 0 30px;
+  padding-bottom: 30px;
+
+
+  @media screen  and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    & tbody {
+      display: flex;
+    }
+  }
+
+  @media screen  and (min-width: $desktop-min) {
+    width: 33%;
+    margin-left: 17%;
+    padding: 0;
+  }
+}
+
+.table-info__item {
+  width: 50%;
 }
 
 .table-info__title {
   width: 30%;
+  
   vertical-align: top;
 }
 
@@ -37,5 +103,36 @@
   &:active {
     color: $color-blue;
     opacity: 0.5;
+  }
+}
+
+.contacts__map {
+  width: 100%;
+  height: 460px;
+
+  @media screen  and (min-width: $desktop-min) {
+    width: 50%;
+    order: 1;
+  }
+}
+
+.contacts__write {
+  @include button();
+
+  display: block;
+  width: 260px;
+  margin: 40px auto;
+
+  font-size: 18px;
+
+  @media screen  and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    width: 230px;
+    margin: 50px auto;
+  }
+
+  @media screen  and (min-width: $desktop-min) {
+    margin: 0;
+    margin-left: 17%;
+    margin-top: auto;
   }
 }
