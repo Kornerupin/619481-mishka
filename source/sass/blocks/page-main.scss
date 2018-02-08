@@ -81,10 +81,33 @@
   line-height: 24px;
   color: $color-gray-dark;
 
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  & br {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet-min) {
     padding: 50px;
     padding-top: 100px;
+    padding-bottom: 0;
 
     font-size: 17px;
+
+    & .br-tablet {
+      display: inline;
+    }
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    margin-left: 115px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    & .br-tablet {
+      display: none;
+    }
+
+    & .br-desktop {
+      display: inline;
+    }
   }
 }

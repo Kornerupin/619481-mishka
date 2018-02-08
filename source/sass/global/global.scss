@@ -22,6 +22,12 @@ body {
   outline: 2px solid darkgreen;
 }
 
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
