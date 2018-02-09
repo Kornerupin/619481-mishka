@@ -15,7 +15,7 @@
 
   background-color: $color-gray-lighten;
 
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     padding-top: 30px;
     padding-bottom: 65px;
 
@@ -55,7 +55,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     padding-top: 35px;
     padding-bottom: 85px;
 
@@ -65,7 +65,7 @@
 }
 
 .page-main__catalog {
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     display: flex;
     justify-content: space-between;
     padding: 0 50px;
@@ -85,7 +85,7 @@
     display: none;
   }
 
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     padding: 50px;
     padding-top: 100px;
     padding-bottom: 0;
@@ -97,7 +97,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     margin-left: 115px;
     padding-left: 100px;
     padding-right: 100px;

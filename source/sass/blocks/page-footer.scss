@@ -1,7 +1,7 @@
 .page-footer {
   background-color: $color-gray-light;
 
-  @media screen and (min-width: $mobile-max) {
+  @media screen and (min-width: $bp-mobile-max) {
     display: flex;
   }
 }
@@ -9,7 +9,7 @@
 .page-footer__logo {
   display: none;
 
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     display: block;
     width: 33%;
     box-sizing: border-box;
@@ -18,7 +18,7 @@
 }
 
 .page-footer__logo-link {
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     display: block;
     width: 100%;
     height: 100%;
@@ -30,12 +30,12 @@
   padding: 0 30px;
   text-align: center;
 
-  @media screen and (min-width: $mobile-max) {
+  @media screen and (min-width: $bp-mobile-max) {
     width: 33%;
     box-sizing: border-box;
   }
 
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     padding-right: 50px;
     padding-left: 0;
   }
@@ -66,7 +66,7 @@
     opacity: 1;
   }
 
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     text-align: right;
     box-sizing: border-box;
   }
@@ -78,7 +78,7 @@
   margin-right: 5px;
 
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     margin-right: 20px;
   }
 }

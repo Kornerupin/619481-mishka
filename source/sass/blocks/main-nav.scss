@@ -10,7 +10,7 @@
 
   list-style-type: none;
 
-  @media screen and (max-width: $tablet-min) {
+  @media screen and (max-width: $bp-tablet-min) {
     flex-direction: column;
 
     &--close .main-nav__item {
@@ -22,7 +22,7 @@
     }
   }
 
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     flex-wrap: wrap;
   }
 }
@@ -30,7 +30,7 @@
 .main-nav__item {
   display: flex;
 
-  @media screen and (max-width: $tablet-min) {
+  @media screen and (max-width: $bp-tablet-min) {
     width: 100%;
 
     border-bottom: 1px solid $color-gray-light;
@@ -40,7 +40,7 @@
 .main-nav__item--logo {
   position: relative;
 
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     order: 1;
 
     width: 210px;
@@ -48,7 +48,7 @@
     border-bottom: 1px solid $color-gray-light;
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     order: 3;
     width: 240px;
     flex-grow: 1;
@@ -58,7 +58,7 @@
 }
 
 .main-nav__logo-img {
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     display: inline-block;
   }
 }
@@ -86,7 +86,7 @@
     color: lighten($color-gray-dark, 60%);
   }
 
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     height: 100%;
     padding: 0;
     box-sizing: border-box;
@@ -99,7 +99,7 @@
   height: 78px;
   justify-content: center;
 
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     padding: 20px 0;
     text-align: center;
   }
@@ -107,7 +107,7 @@
 
 
 .main-nav__item--basket {
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     order: 3;
     box-sizing: content-box;
     width: 315px;
@@ -115,7 +115,7 @@
     border-bottom: 1px solid $color-gray-light;
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     order: 5;
     width: 315px;
     border-left: 1px solid $color-gray-light;
@@ -125,7 +125,7 @@
 }
 
 .main-nav__item--search {
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     position: relative;
     order: 2;
 
@@ -135,7 +135,7 @@
     border-bottom: 1px solid $color-gray-light;
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     order: 4;
     position: relative;
 
@@ -176,7 +176,7 @@
     opacity: 0.5;
   }
 
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     font-size: 0;
 
     &::before {
@@ -196,7 +196,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     font-size: 0;
 
     &::before {
@@ -221,7 +221,7 @@
     opacity: 0.5;
   }
 
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     padding: 32px 0;
     padding-left: 80px;
 
@@ -230,7 +230,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     padding: 32px 0;
     padding-left: 80px;
     padding-right: 50px;
@@ -244,14 +244,14 @@
 
 
 .main-nav__item--catalog {
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     order: 4;
     height: 60px;
     width: 200px;
     background-color: $color-gray-lighten;
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     order: 1;
     width: 235px;
     height: 88px;
@@ -262,7 +262,7 @@
 }
 
 .main-nav__item-link--catalog {
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     padding-top: 18px;
     padding-left: 18px;
     padding-right: 18px;
@@ -270,7 +270,7 @@
     font-size: 15px;
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     padding: 32px 0;
     padding-left: 50px;
     text-align: left;
@@ -279,7 +279,7 @@
 
 
 .main-nav__item--knitting {
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     order: 5;
     flex-grow: 1;
 
@@ -289,7 +289,7 @@
     background-color: $color-gray-lighten;
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     order: 2;
     width: 220px;
     text-align: center;
@@ -299,7 +299,7 @@
 }
 
 .main-nav__item-link--knitting {
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     width: 175px;
     padding-top: 18px;
     padding-left: 18px;
@@ -308,14 +308,14 @@
     font-size: 15px;
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     padding: 32px;
   }
 }
 
 
 .main-nav__item--delivery {
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     position: relative;
     order: 6;
 
@@ -325,7 +325,7 @@
     background-color: $color-gray-lighten;
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     order: 8;
     height: 60px;
     width: 300px;
@@ -336,7 +336,7 @@
 }
 
 .main-nav__item-link--delivery {
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     width: 270px;
     padding-top: 18px;
     padding-left: 18px;
@@ -346,7 +346,7 @@
     font-weight: normal;
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     width: 270px;
     padding-top: 18px;
     padding-left: 18px;
@@ -425,13 +425,13 @@
     }
   }
 
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     display: none;
   }
 }
 
 .main-nav__item--new {
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     order: 6;
     height: 60px;
     width: 226px;
@@ -441,7 +441,7 @@
 }
 
 .main-nav__item-link--new {
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     padding-top: 18px;
     padding-left: 10px;
     padding-right: 18px;
@@ -451,7 +451,7 @@
 }
 
 .main-nav__item--sale {
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     order: 7;
     height: 60px;
     background-color: $color-gray-lighten;
@@ -460,7 +460,7 @@
 }
 
 .main-nav__item-link--sale {
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     width: 226px;
     padding-top: 18px;
     padding-right: 18px;
@@ -471,13 +471,13 @@
 
 
 .main-nav__item--tablet {
-  @media screen and (max-width: $tablet-min) {
+  @media screen and (max-width: $bp-tablet-min) {
     display: none;
   }
 }
 
 .main-nav__item--desktop {
-  @media screen and (max-width: $desktop-min) {
+  @media screen and (max-width: $bp-desktop-min) {
     display: none;
   }
 }

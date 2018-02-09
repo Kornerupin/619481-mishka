@@ -3,11 +3,11 @@
 
   font-size: 17px;
 
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     padding: 50px;
   }
 
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     padding: 50px 100px;
   }
 }
@@ -18,14 +18,14 @@
 
   font-size: 25px;
 
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     margin-bottom: 10px;
 
     font-size: 43px;
     line-height: 50px;
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     width: 83%;
     margin-left: 17%;
 
@@ -40,7 +40,7 @@
 
   list-style-type: none;
 
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -86,12 +86,12 @@
     background-image: url("../../img/icon-feature-gift.svg");
   }
 
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     width: 50%;
     margin: 15px 0;
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     &:nth-child(odd) {
       width: 33%;
       margin-left: 17%;

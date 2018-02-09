@@ -3,12 +3,12 @@
 
   border: 1px solid $color-gray-light;
 
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     display: flex;
     margin: 50px;
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     margin: 0;
     width: 30%;
     display: flex;
@@ -17,11 +17,11 @@
 }
 
 .product-card__image-wrapper {
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     width: 50%;
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     width: 100%;
     overflow: hidden;
   }
@@ -31,11 +31,11 @@
   width: 100%;
   display: block;
 
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     width: 100%;
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     width: auto;
     height: 460px;
   }
@@ -53,7 +53,7 @@
     box-shadow: 0 3px 5px 0 rgba($color-black, 0.1);
   }
 
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -68,7 +68,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     width: 100%;
 
     &:hover {
@@ -87,7 +87,7 @@
   font-size: 17px;
   line-height: 24px;
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     width: 100%;
   }
 }
@@ -112,7 +112,7 @@
   font-size: 13px;
   color: $color-gray-dark;
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     width: 100%;
   }
 }
@@ -121,11 +121,11 @@
   display: flex;
 
 
-  @media screen and (min-width: $tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) {
     margin-top: auto;
   }
 
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     width: 100%;
   }
 }
