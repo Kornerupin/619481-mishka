@@ -3,7 +3,7 @@
 
   border: 1px solid $color-gray-light;
 
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @media screen and (min-width: $tablet-min) {
     display: flex;
     margin: 50px;
   }
@@ -13,6 +13,16 @@
     width: 30%;
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+.product-card__image-wrapper {
+  @media screen and (min-width: $tablet-min) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    width: 100%;
     overflow: hidden;
   }
 }
@@ -21,8 +31,8 @@
   width: 100%;
   display: block;
 
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
-    width: 50%;
+  @media screen and (min-width: $tablet-min) {
+    width: 100%;
   }
 
   @media screen and (min-width: $desktop-min) {
@@ -43,7 +53,7 @@
     box-shadow: 0 3px 5px 0 rgba($color-black, 0.1);
   }
 
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @media screen and (min-width: $tablet-min) {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -60,8 +70,14 @@
 
   @media screen and (min-width: $desktop-min) {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+
+    &:hover {
+      box-shadow: 0 6px 10px 0 rgba($color-black, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba($color-black, 0.1);
+    }
   }
 }
 
@@ -105,13 +121,12 @@
   display: flex;
 
 
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @media screen and (min-width: $tablet-min) {
     margin-top: auto;
   }
 
   @media screen and (min-width: $desktop-min) {
     width: 100%;
-    margin-top: auto;
   }
 }
 

@@ -10,26 +10,20 @@
         background-repeat: no-repeat;
         background-position:  50% 0;
         /* По умолчанию показывается мобильный макет */
-      // background-image: url( "./pixel-glass//mishka-index-mobile.jpg" );
-        /*background-image: url( "./pixel-glass/mishka-index-tablet.jpg" );*/
-      // background-image: url( "./pixel-glass/mishka-form-mobile.jpg" );
+        background-image: url( "./pixel-glass/mishka-catalog-mobile.jpg" );
       }
       /* Планшет */
       @media ( min-width: 767px ) {
         HTML {
           /* Планшетный макет */
-        // background-image: url( "./pixel-glass/mishka-index-tablet.jpg" );
           background-image: url( "./pixel-glass/mishka-catalog-tablet.jpg" );
-        // background-image: url( "./pixel-glass/mishka-form-tablet.jpg" );
         }
       }
       /* Десктоп */
       @media ( min-width: 1150px ) {
         HTML {
           /* Десктопный макет */
-        // background-image: url( "./pixel-glass/mishka-index-desktop.jpg" );
-          /*background-image: url( "./pixel-glass/mishka-catalog-desktop.jpg" );*/
-        // background-image: url( "./pixel-glass/mishka-form-desktop.jpg" );
+          background-image: url( "./pixel-glass/mishka-catalog-desktop.jpg" );
         }
       }
     </style>
@@ -84,7 +78,9 @@
       <h2 class="catalog__title visually-hidden">Товары</h2>
 
       <article class="product-card" data-id="2433234">
-        <img class="product-card__image" src="../img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик"/>
+        <div class="product-card__image-wrapper">
+          <img class="product-card__image" src="../img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик"/>
+        </div>
         <div class="product-card__text-content">
           <h3 class="product-card__title">
             <a class="product-card__title-link" href="#">Зайчик-попрыгайчик</a>
@@ -98,7 +94,9 @@
       </article>
 
       <article class="product-card" data-id="2433235">
-        <img class="product-card__image" src="../img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья"/>
+        <div class="product-card__image-wrapper">
+          <img class="product-card__image" src="../img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья"/>
+        </div>
         <div class="product-card__text-content">
           <h3 class="product-card__title">
             <a class="product-card__title-link" href="#">Корзинка для белья</a>
@@ -112,7 +110,9 @@
       </article>
 
       <article class="product-card" data-id="2433236">
-        <img class="product-card__image" src="../img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек"/>
+        <div class="product-card__image-wrapper">
+          <img class="product-card__image" src="../img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек"/>
+        </div>
         <div class="product-card__text-content">
           <h3 class="product-card__title">
             <a class="product-card__title-link" href="#">Большая корзинка для игрушек</a>
