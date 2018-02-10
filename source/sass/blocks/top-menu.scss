@@ -28,6 +28,7 @@
     justify-content: center;
     flex-wrap: wrap;
     height: 120px;
+    padding: 0 50px;
 
     &::before,
     &::after {
@@ -57,17 +58,15 @@
       background-image: radial-gradient(ellipse 3px 2px at 20px 10px, white 10px, transparent 0);
     }
   }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    padding: 0 100px;
+  }
 }
 
 .top-menu__item {
   @media screen and (min-width: $bp-tablet-min) {
-    width: calc(50% - 50px);
-    margin-left: 50px;
-  }
-
-  @media screen and (min-width: $bp-desktop-min) {
-    width: calc(50% - 100px);
-    margin-left: 100px;
+    width: 50%;
   }
 
   &--decor-thing {
@@ -76,15 +75,6 @@
 
   &--child-toys {
     background-color: $color-blue-lighter;
-
-    @media screen and (min-width: $bp-tablet-min) {
-      margin-left: 0;
-      margin-right: 50px;
-    }
-
-    @media screen and (min-width: $bp-desktop-min) {
-      margin-right: 100px;
-    }
   }
 }
 

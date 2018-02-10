@@ -165,8 +165,6 @@
   display: flex;
 
   @media screen and (max-width: $bp-mobile-max) {
-    width: 100%;
-
     border-bottom: 1px solid $color-gray-light;
   }
 }
