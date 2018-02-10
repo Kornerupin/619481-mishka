@@ -73,28 +73,11 @@
     order: -1;
     padding: 0 35px;
     padding-top: 10px;
+    width: 17%;
+    box-sizing: border-box;
   }
 }
 
-.week-product__content {
-  @media screen and (min-width: $bp-tablet-min) {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: calc(50% - 40px);
-    margin-right: 40px;
-  }
-
-  &--price-block {
-    margin-top: auto;
-  }
-
-  @media screen and (min-width: $bp-desktop-min) {
-    width: calc(33% - 55px);
-    margin-right: 55px;
-    margin-left: 17%;
-  }
-}
 
 .week-product__description {
   margin: 30px 0;
@@ -109,8 +92,11 @@
 
   @media screen and (min-width: $bp-desktop-min) {
     margin-top: 170px;
+    width: calc(33% - 40px);
+    margin-left: 17%;
   }
 }
+
 
 .week-product__parameters {
   width: 100%;
@@ -122,7 +108,31 @@
     width: calc(50% - 40px);
     margin-right: 40px;
   }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    width: calc(33% - 40px);
+    margin-left: 17%;
+  }
 }
+
+.week-product__parameters-item {
+  line-height: 24px;
+}
+
+.week-product__param {
+  width: 40%;
+  padding: 7px 0;
+
+  border-bottom: 1px solid $color-gray-light;
+}
+
+.week-product__value {
+  width: 60%;
+  padding: 7px 0;
+
+  border-bottom: 1px solid $color-gray-light;
+}
+
 
 .week-product__image {
   display: inline-block;
@@ -149,23 +159,6 @@
   }
 }
 
-.week-product__parameters-item {
-  line-height: 24px;
-}
-
-.week-product__param {
-  width: 40%;
-  padding: 7px 0;
-
-  border-bottom: 1px solid $color-gray-light;
-}
-
-.week-product__value {
-  width: 60%;
-  padding: 7px 0;
-
-  border-bottom: 1px solid $color-gray-light;
-}
 
 .week-product__price {
   font-size: 17px;
@@ -179,6 +172,11 @@
     width: calc(50% - 40px);
     margin-right: 40px;
   }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    width: calc(33% - 40px);
+    margin-left: 17%;
+  }
 }
 
 .week-product__add-to-basket {
@@ -189,5 +187,14 @@
   @media screen and (min-width: $bp-tablet-min) {
     width: 290px;
     margin-right: calc(75% - 125px);
+  }
+
+  @media screen and (min-width: $bp-tablet-min) {
+    width: 290px;
+    margin-right: calc(75% - 125px);
+  }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    margin-right: calc(66.5% - 125px);
   }
 }
