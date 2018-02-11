@@ -142,6 +142,7 @@
     position: absolute;
     top: 160px;
     right: 50px;
+    z-index: -1;
 
     display: block;
     max-width: calc(50% - 50px);
@@ -152,7 +153,6 @@
   @media screen and (min-width: $bp-desktop-min) {
     top: 50px;
     right: 100px;
-    z-index: -1;
 
     max-width: calc(50% - 100px);
     height: calc(100% - 100px);
