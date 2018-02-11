@@ -11,6 +11,30 @@
 
   @media screen and (min-width: $bp-mobile-min) {
     flex-wrap: wrap;
+
+    &--closed .main-nav__button-toggle {
+      &::before,
+      &::after {
+        height: 0;
+        width: 24px;
+      }
+
+      &::before {
+        top: 39px;
+
+        border-bottom: 0;
+
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        bottom: 39px;
+
+        transform: rotate(45deg);
+
+        border-top: 0;
+      }
+    }
   }
 }
 
@@ -92,30 +116,6 @@
 
   &::after {
     bottom: 33px;
-  }
-
-  &--open {
-    &::before,
-    &::after {
-      height: 0;
-      width: 24px;
-    }
-
-    &::before {
-      top: 39px;
-
-      border-bottom: 0;
-
-      transform: rotate(-45deg);
-    }
-
-    &::after {
-      bottom: 39px;
-
-      transform: rotate(45deg);
-
-      border-top: 0;
-    }
   }
 
   @media screen and (min-width: $bp-tablet-min) {
@@ -353,6 +353,7 @@
 
   @media screen and (min-width: $bp-desktop-min) {
     padding-top: 32px;
+    padding-left: 50px;
   }
 }
 

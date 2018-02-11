@@ -27,6 +27,8 @@
     font-size: 43px;
     line-height: 50px;
 
+    padding: 0 50px;
+
     &::after {
       content: "";
       position: absolute;
@@ -64,6 +66,8 @@
 
 
   @media screen  and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+    padding: 0 50px;
+
     & tbody {
       display: flex;
     }

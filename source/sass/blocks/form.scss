@@ -98,12 +98,14 @@
   @media screen and (min-width: $bp-tablet-min) {
     display: flex;
     flex-wrap: wrap;
-    width: calc(100% - 165px);
+    width: calc(83% - 165px);
+    margin-left: 17%;
   }
 
   @media screen and (min-width: $bp-desktop-min) {
     width: calc(100% - 230px);
     margin-right: 115px;
+    margin-left: 115px;
   }
 }
 
