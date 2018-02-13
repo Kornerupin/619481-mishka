@@ -277,7 +277,7 @@
 
     &::before {
       top: 36px;
-      left: 30px;
+      left: 31px;
     }
   }
 }
@@ -300,13 +300,13 @@
 
   @media screen and (min-width: $bp-tablet-min) {
     padding: 32px 0;
-    padding-left: 80px;
+    padding-left: 83px;
     padding-right: 50px;
     text-align: right;
 
     &::before {
       top: 34px;
-      left: 30px;
+      left: 31px;
     }
   }
 
@@ -349,7 +349,7 @@
   @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     padding-top: 18px;
     padding-left: 50px;
-    padding-right: 30px;
+    padding-right: 14px;
     font-size: 15px;
   }
 
@@ -363,7 +363,7 @@
   @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     min-width: 175px;
     padding-top: 18px;
-    padding-left: 20px;
+    padding-left: 18px;
     padding-right: 30px;
 
     font-size: 15px;

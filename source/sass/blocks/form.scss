@@ -20,7 +20,7 @@
 
   border: none;
 
-  @media screen and (max-width: $bp-tablet-min) {
+  @media screen and (max-width: $bp-mobile-max) {
     &::after {
       content: "";
       position: absolute;
@@ -44,10 +44,17 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     padding: 50px;
+    padding-bottom: 32px;
     margin: 0;
 
     &--dark {
       background-color: $color-gray-f1;
+      padding-top: 38px;
+      padding-bottom: 38px;
+    }
+
+    &--personal {
+      padding-bottom: 25px;
     }
   }
 
@@ -83,8 +90,12 @@
 
   @media screen and (min-width: $bp-tablet-min) {
     position: absolute;
-    left: 50px;
-    top: 75px;
+    left: 49px;
+    top: 69px;
+
+    &--type {
+      top: 75px;
+    }
   }
 
   @media screen and (min-width: $bp-desktop-min) {
@@ -102,8 +113,8 @@
   @media screen and (min-width: $bp-tablet-min) {
     display: flex;
     flex-wrap: wrap;
-    width: calc(83% - 165px);
-    margin-left: 17%;
+    width: 75%;
+    margin-left: 25%;
   }
 
   @media screen and (min-width: $bp-desktop-min) {
@@ -123,7 +134,7 @@
   text-transform: uppercase;
   color: $color-blue-darker;
 
-  @media screen and (max-width: $bp-tablet-min) {
+  @media screen and (max-width: $bp-mobile-max) {
     &::before {
       content: "";
       position: absolute;
@@ -152,11 +163,13 @@
     }
 
     &--phone {
-      padding-top: 65px;
+      padding-top: 42px;
+      padding-bottom: 5px;
     }
 
     &--email {
       padding-top: 0;
+      padding-bottom: 45px;
     }
   }
 
@@ -169,6 +182,10 @@
 .form__type-item {
   width: 100%;
   min-height: 60px;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    min-height: 76px;
+  }
 }
 
 .form__type-description {
@@ -197,6 +214,19 @@
       padding-bottom: 0;
     }
   }
+
+
+  @media screen and (min-width: $bp-tablet-min) {
+    padding-left: 81px;
+    letter-spacing: 1.2px;
+
+    &::before {
+      top: 6px;
+      left: 0;
+      width: 48px;
+      height: 48px;
+    }
+  }
 }
 
 .form__type-input {
@@ -214,12 +244,28 @@
 
     background-color: $color-blue-lighter;
     border-radius: 50%;
+
+    @media screen and (min-width: $bp-tablet-min) {
+      top: 22px;
+      left: 16px;
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
 
 .form__color-item {
   width: 100%;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    width: 52%;
+    min-height: 76px;
+
+    &:nth-child(2n) {
+      width: 48%;
+    }
+  }
 
   @media screen and (min-width: $bp-desktop-min) {
     width: 33%;
@@ -247,6 +293,18 @@
 
     border: 2px solid $color-gray-dark;
   }
+
+  @media screen and (min-width: $bp-tablet-min) {
+    padding-top: 28px;
+    letter-spacing: 1.5px;
+    padding-bottom: 30px;
+    padding-left: 81px;
+
+    &::before {
+      width: 50px;
+      height: 48px;
+    }
+  }
 }
 
 .form__color-input {
@@ -264,6 +322,13 @@
 
     background: url("../../img/icon-tick.svg") no-repeat center / 55%;
   }
+
+  @media screen and (min-width: $bp-tablet-min) {
+    &:checked + .form__color-description::after {
+      width: 50px;
+      height: 48px;
+    }
+  }
 }
 
 
@@ -272,7 +337,9 @@
 
   @media screen and (min-width: $bp-tablet-min) {
     width: 100%;
-    margin: 20px 0;
+    padding-top: 11px;
+    padding-bottom: 2px;
+    margin-bottom: 20px;
   }
 }
 
@@ -336,7 +403,7 @@
     width: 100%;
 
     &::after {
-      right: 25px;
+      right: 23px;
     }
   }
 
@@ -357,6 +424,13 @@
   &::after {
     top: -47px;
     background-image: url("../../img/icon-mail.svg");
+  }
+
+  @media screen and (min-width: $bp-tablet-min) {
+    &::after {
+      top: -45px;
+      background-image: url("../../img/icon-mail.svg");
+    }
   }
 }
 
@@ -382,6 +456,7 @@
     line-height: 18px;
     font-size: 19px;
     padding-left: 20px;
+    padding-bottom: 12px;
     background-color: $color-gray-f1;
   }
 
@@ -408,6 +483,11 @@
       background-image: url("../../img/icon-mail--blue.svg");
       opacity: 1;
     }
+  }
+
+  @media screen and (min-width: $bp-tablet-min) {
+    padding-top: 5px;
+    padding-bottom: 13px;
   }
 }
 
@@ -448,7 +528,11 @@
 }
 
 .form__group-solo--textarea {
-  margin-bottom: 18px;
+  margin-bottom: 2px;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    padding-top: 27px;
+  }
 }
 
 .form__submit-wrapper {
@@ -456,7 +540,7 @@
     display: flex;
     align-items: baseline;
     padding: 0 50px;
-    padding-bottom: 50px;
+    padding-bottom: 22px;
   }
 
   @media screen and (min-width: $bp-desktop-min) {
@@ -489,7 +573,7 @@
 
   line-height: 16px;
   margin: 0 auto;
-  margin-top: 29px;
+  margin-top: 32px;
   margin-bottom: 28px;
 
   @media screen and (min-width: $bp-tablet-min) {

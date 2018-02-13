@@ -16,7 +16,7 @@
   background-color: $color-gray-lighten;
 
   @media screen and (min-width: $bp-tablet-min) {
-    padding-top: 30px;
+    padding-top: 33px;
     padding-bottom: 65px;
 
     font-size: 43px;
@@ -65,6 +65,10 @@
 }
 
 .page-main__catalog {
+  @media screen and (min-width: $bp-tablet-min) {
+    padding-top: 46px;
+  }
+
   @media screen and (min-width: $bp-desktop-min) {
     display: flex;
     justify-content: space-between;
@@ -88,10 +92,11 @@
 
   @media screen and (min-width: $bp-tablet-min) {
     padding: 50px;
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 0;
 
     font-size: 17px;
+    line-height: 30px;
 
     & .br-tablet {
       display: inline;
