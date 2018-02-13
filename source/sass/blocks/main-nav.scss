@@ -41,10 +41,12 @@
 .main-nav__logo {
   position: relative;
 
+  border-top: 1px solid $color-gray-light;
   border-bottom: 1px solid $color-gray-light;
 
   @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     width: 30%;
+    border-top: 0;
   }
 
   @media screen and (min-width: $bp-desktop-min) {

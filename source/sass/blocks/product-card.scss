@@ -1,5 +1,6 @@
 .product-card {
   margin: 30px;
+  min-height: 375px;
 
   @media screen and (min-width: $bp-tablet-min) {
     display: flex;

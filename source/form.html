@@ -14,14 +14,14 @@
         background-image: url( "./pixel-glass/mishka-form-mobile.jpg" );
       }
       /* Планшет */
-      @media ( min-width: 767px ) {
+      @media ( min-width: 768px ) {
         HTML {
           /* Планшетный макет */
           background-image: url( "./pixel-glass/mishka-form-tablet.jpg" );
         }
       }
       /* Десктоп */
-      @media ( min-width: 1150px ) {
+      @media ( min-width: 1250px ) {
         HTML {
           /* Десктопный макет */
           background-image: url( "./pixel-glass/mishka-form-desktop.jpg" );
@@ -145,7 +145,7 @@
       </fieldset>
 
 
-      <fieldset class="form__group">
+      <fieldset class="form__group form__group--personal">
         <legend class="form__group-title">ФИО</legend>
 
         <ul class="form__list">
@@ -184,7 +184,7 @@
       </label>
 
 
-      <label class="form__group-solo">
+      <label class="form__group-solo form__group-solo--textarea">
         <span>Доп</span>
         <textarea class="form__textarea"
                   placeholder="Опишите все ваши пожелания к заказу"></textarea>
