@@ -184,13 +184,14 @@
   font-weight: bold;
   line-height: 24px;
   text-align: center;
+  padding-top: 2px;
   margin-top: 0;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 
   @media screen and (min-width: $bp-tablet-min) {
     margin-bottom: 35px;
     margin-top: auto;
-    width: calc(50% - 40px);
+    width: calc(50% - 46px);
     margin-right: 40px;
     font-size: 20px;
     line-height: 24px;
