@@ -8,12 +8,12 @@
   }
 
   @media screen  and (min-width: $bp-desktop-min) {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    height: 460px;
+    min-height: 460px;
     padding: 100px;
-    padding-top: 70px;
+    padding-top: 159px;
   }
 }
 
@@ -91,6 +91,10 @@
     width: 50%;
     font-size: 17px;
   }
+
+  @media screen  and (min-width: $bp-tablet-min) {
+    width: 100%;
+  }
 }
 
 .table-info__title {
@@ -143,8 +147,14 @@
   }
 
   @media screen  and (min-width: $bp-desktop-min) {
-    width: 50%;
-    order: 1;
+    position: absolute;
+    top: 160px;
+    right: 100px;
+    z-index: -1;
+    display: block;
+    max-width: calc(50% - 100px);
+    height: calc(100% - 265px);
+    margin: 0;
   }
 }
 
@@ -168,6 +178,7 @@
   }
 
   @media screen  and (min-width: $bp-desktop-min) {
+    width: 230px;
     margin: 0;
     margin-left: 17%;
     margin-top: auto;

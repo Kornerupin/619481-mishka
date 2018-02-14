@@ -36,11 +36,9 @@ button {
   margin: -1px;
 }
 
-.br-desktop {
-  display: none;
-
-  @media screen and (min-width: $bp-desktop-min) {
-    display: block;
+.br-mobile {
+  @media screen and (min-width: $bp-tablet-min) {
+    display: none;
   }
 }
 

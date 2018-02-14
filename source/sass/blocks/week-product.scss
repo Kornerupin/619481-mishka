@@ -16,6 +16,7 @@
 
   @media screen and (min-width: $bp-desktop-min) {
     padding: 50px 100px;
+    min-height: 657px;
   }
 }
 
@@ -29,8 +30,8 @@
 
   @media screen and (min-width: $bp-desktop-min) {
     position: absolute;
-    top: 125px;
-    left: 100px;
+    top: 122px;
+    left: 92px;
     right: 100px;
 
     width: auto;
@@ -96,8 +97,8 @@
   }
 
   @media screen and (min-width: $bp-desktop-min) {
-    margin-top: 170px;
-    width: calc(33% - 40px);
+    margin-top: 178px;
+    width: calc(33% - 60px);
     margin-left: 17%;
   }
 }
@@ -116,7 +117,9 @@
   }
 
   @media screen and (min-width: $bp-desktop-min) {
-    width: calc(33% - 40px);
+    width: calc(33% - 60px);
+    margin-top: 47px;
+    font-size: 17px;
     margin-left: 17%;
   }
 }
@@ -164,11 +167,11 @@
   }
 
   @media screen and (min-width: $bp-desktop-min) {
-    top: 50px;
+    top: 70px;
     right: 100px;
 
-    max-width: calc(50% - 100px);
-    height: calc(100% - 100px);
+    width: calc(50% - 100px);
+    height: calc(100% - 120px);
   }
 }
 
@@ -191,7 +194,7 @@
   }
 
   @media screen and (min-width: $bp-desktop-min) {
-    width: calc(33% - 40px);
+    width: calc(33% - 60px);
     margin-left: 17%;
   }
 }
@@ -212,6 +215,6 @@
   }
 
   @media screen and (min-width: $bp-desktop-min) {
-    margin-right: calc(66.5% - 125px);
+    margin-right: calc(66.5% - 114px);
   }
 }
