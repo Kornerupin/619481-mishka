@@ -68,6 +68,8 @@
     &--dark {
       padding-left: 108px;
       padding-right: 20px;
+      padding-top: 1px;
+      padding-bottom: 30px;
     }
   }
 }
@@ -184,8 +186,18 @@
   }
 
   @media screen and (min-width: $bp-desktop-min) {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 111px;
+    padding-right: 111px;
+
+    &--phone {
+      padding-top: 54px;
+      padding-bottom: 11px;
+    }
+
+    &--email {
+      padding-top: 15px;
+      padding-bottom: 45px;
+    }
   }
 }
 
@@ -366,6 +378,10 @@
     padding-bottom: 2px;
     margin-bottom: 20px;
   }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    padding-left: 10px;
+  }
 }
 
 .form__name-content {
@@ -434,7 +450,7 @@
 
   @media screen and (min-width: $bp-desktop-min) {
     &::after {
-      right: 128px;
+      right: 118px;
     }
   }
 }
@@ -558,6 +574,11 @@
   @media screen and (min-width: $bp-tablet-min) {
     padding-top: 27px;
   }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    padding-top: 50px;
+    margin-bottom: 0;
+  }
 }
 
 .form__submit-wrapper {
@@ -586,7 +607,7 @@
   }
 
   @media screen and (min-width: $bp-desktop-min) {
-    margin-right: 115px;
+    margin-right: 123px;
   }
 }
 
@@ -609,6 +630,6 @@
   }
 
   @media screen and (min-width: $bp-desktop-min) {
-    margin-left: 115px;
+    margin-left: 125px;
   }
 }
