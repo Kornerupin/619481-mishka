@@ -14,11 +14,18 @@
 
 body {
   margin: 0 auto;
-  width: 320px;
+  min-width: 320px;
   color: $color-black;
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
+  background: #ffffff;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
 }
 
 .visually-hidden {
@@ -29,14 +36,20 @@ body {
   margin: -1px;
 }
 
-BODY > * {
-  outline: 3px dashed deeppink;
-  margin-bottom: 8px;;
+.br-mobile {
+  @media screen and (min-width: $bp-tablet-min) {
+    display: none;
+  }
 }
-BODY > * > * {
-  outline: 3px solid dodgerblue;
-  outline-offset: -4px;
-}
+
+//BODY > * {
+//  outline: 3px dashed deeppink;
+//  margin-bottom: 8px;;
+//}
+//BODY > * > * {
+//  outline: 3px solid dodgerblue;
+//  outline-offset: -4px;
+//}
 //BODY > * > * > * {
 //  box-shadow: inset 0 0 8px darkgreen;
 //}
@@ -44,3 +57,48 @@ BODY > * > * {
 //  background-color: rgba(255, 0, 0, .4);
 //  margin: 2px
 //}
+
+@mixin button() {
+  width: 100%;
+  height: 53px;
+  box-sizing: border-box;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-gray-dark;
+
+  border: 2px solid $color-gray-dark;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  &:hover {
+    color: $color-white;
+
+    background-color: $color-gray-dark;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+  }
+}
+
+@mixin text-input() {
+  width: 100%;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+
+  font-family: inherit;
+  color: $color-gray-dark;
+
+  border: none;
+  border-bottom: 2px solid $color-gray-dark;
+
+  &:hover,
+  &:focus {
+    border-bottom-color: $color-blue;
+  }
+}

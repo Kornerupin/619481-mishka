@@ -1,10 +1,65 @@
 .week-product {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  padding-top: 27px;
+
   color: $color-gray-dark;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    padding: 50px;
+    padding-top: 44px;
+    min-height: 512px;
+  }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    padding: 50px;
+    min-height: 657px;
+
+    margin: 0 auto;
+    max-width: 1150px;
+  }
+}
+
+.week-product__header {
+  @media screen and (min-width: $bp-tablet-min) {
+    display: flex;
+    width: 100%;
+    padding-bottom: 49px;
+    letter-spacing: -0.3px;
+  }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    position: absolute;
+    top: 124px;
+    left: 48px;
+    right: 100px;
+
+    width: auto;
+    padding: 0;
+  }
 }
 
 .week-product__title {
+  margin: 0;
+
   font-size: 25px;
   color: $color-black;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    flex-grow: 1;
+    font-size: 53px;
+    line-height: 57px;
+    overflow: hidden;
+    height: 65px;
+  }
 }
 
 .week-product__status {
@@ -13,25 +68,157 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color-blue-darker;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    text-align: center;
+    margin-left: auto;
+    padding-top: 9px;
+    width: 126px;
+  }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    order: -1;
+    padding: 0 35px;
+    padding-top: 10px;
+    width: 17%;
+    box-sizing: border-box;
+  }
 }
+
 
 .week-product__description {
+  margin: 18px 0;
+
   line-height: 24px;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    margin: 0;
+    width: calc(50% - 40px);
+    margin-right: 40px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    margin-top: 178px;
+    width: calc(33% - 60px);
+    margin-left: 175px;
+  }
 }
 
-.week-product__characters-item {
-  line-height: 24px;
+
+.week-product__parameters {
+  width: 100%;
+  margin: 0;
+
+  border-collapse: collapse;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    width: calc(50% - 40px);
+    margin-right: 40px;
+    margin-top: 36px;
+  }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    width: calc(33% - 60px);
+    margin-top: 47px;
+    font-size: 17px;
+    margin-left: 17%;
+  }
 }
+
+.week-product__parameters-item {
+  line-height: 25px;
+}
+
+.week-product__param {
+  width: 35%;
+
+  border-bottom: 1px solid $color-gray-light;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    width: 32%;
+  }
+}
+
+.week-product__value {
+  width: 60%;
+  padding: 7px 0;
+
+  border-bottom: 1px solid $color-gray-light;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    width: 68%;
+  }
+}
+
+
+.week-product__image {
+  display: inline-block;
+  margin: 25px auto;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    position: absolute;
+    top: 160px;
+    right: 50px;
+    z-index: -1;
+
+    display: block;
+    max-width: calc(50% - 50px);
+    height: calc(100% - 210px);
+    margin: 0;
+  }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    top: 70px;
+    right: 50px;
+
+    width: calc(50% - 50px);
+    height: calc(100% - 120px);
+  }
+}
+
 
 .week-product__price {
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
+  text-align: center;
+  padding-top: 2px;
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    margin-bottom: 35px;
+    margin-top: auto;
+    width: calc(50% - 46px);
+    margin-right: 40px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    width: calc(33% - 60px);
+    margin-left: 17%;
+  }
 }
 
 .week-product__add-to-basket {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 20px;
-  text-transform: uppercase;
+  @include button();
+  width: 260px;
+  margin: 0 auto;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    width: 290px;
+    margin-right: calc(75% - 125px);
+  }
+
+  @media screen and (min-width: $bp-tablet-min) {
+    width: 290px;
+    margin-right: calc(75% - 125px);
+  }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    margin-right: calc(66.5% - 114px);
+  }
 }

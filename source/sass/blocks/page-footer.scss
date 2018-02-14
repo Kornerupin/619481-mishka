@@ -1,15 +1,109 @@
 .page-footer {
   background-color: $color-gray-light;
+  height: 160px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: $bp-tablet-min) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $bp-mobile-max) {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  @media screen and (min-width: $bp-tablet-min) {
+    height: 143px;
+  }
+}
+
+.page-footer__content {
+  width: 100%;
+  height: 50%;
+
+  @media screen and (max-width: $bp-tablet-min) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: $bp-tablet-min) {
+    width: 33%;
+    height: 100%;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    display: block;
+    font-size: 0;
+  }
+}
+
+.page-footer__logo-link {
+  @media screen and (min-width: $bp-tablet-min) {
+    display: block;
+    height: 100%;
+    background: url("../../img/logo-mobile.svg") no-repeat 50px center;
+  }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    background-position: 50px center;
+  }
 }
 
 .page-footer__developer {
-  line-height: 0;
+  display: flex;
+  justify-content: center;
 }
 
+
 .page-footer__developer-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+
   font-size: 19px;
   font-weight: bold;
   line-height: 18px;
   text-decoration: none;
   color: $color-black;
+
+
+  @media screen and (min-width: $bp-tablet-min) {
+    padding-right: 50px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    padding-right: 50px;
+  }
+
+  &:hover .page-footer__developer-image {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active .page-footer__developer-image {
+    opacity: 1;
+  }
+}
+
+.page-footer__developer-text {
+  margin-right: 30px;
+}
+
+.page-footer__developer-image {
+  height: 36px;
+
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
 }

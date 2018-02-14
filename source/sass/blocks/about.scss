@@ -1,12 +1,135 @@
 .about {
+  padding: 30px;
+  padding-top: 40px;
+
   font-size: 17px;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    padding: 50px;
+    padding-top: 67px;
+    height: 534px;
+  }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    padding: 50px;
+    padding-top: 105px;
+
+    margin: 0 auto;
+    max-width: 1150px;
+  }
 }
 
 .about__title {
+  margin: 0;
+  margin-bottom: 30px;
+
   font-size: 25px;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    margin-bottom: 34px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    width: 83%;
+    margin-left: 168px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
-.about__item-description {
+.about__features {
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.about__feature {
+  position: relative;
   font-weight: bold;
   line-height: 20px;
+  padding-top: 55px;
+  min-height: 60px;
+  padding-bottom: 28px;
+  box-sizing: border-box;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 50px;
+    height: 40px;
+
+    background: url("../../img/icon-feature-flower.svg") no-repeat center;
+  }
+
+  &--flower::before {
+    left: -1px;
+    top: -1px;
+    background-image: url("../../img/icon-feature-flower.svg");
+  }
+
+  &--money::before {
+    left: -2px;
+    top: -5px;
+    background-image: url("../../img/icon-feature-money.svg");
+  }
+
+  &--heart::before {
+    left: -1px;
+    top: 0;
+    background-image: url("../../img/icon-feature-heart.svg");
+  }
+
+  &--ball::before {
+    left: -4px;
+    top: 1px;
+    background-image: url("../../img/icon-feature-ball.svg");
+  }
+
+  &--rocket::before {
+    left: -4px;
+    top: -5px;
+    background-image: url("../../img/icon-feature-rocket.svg");
+  }
+
+  &--gift::before {
+    left: -6px;
+    top: -2px;
+    background-image: url("../../img/icon-feature-gift.svg");
+  }
+
+  @media screen and (min-width: $bp-tablet-min) {
+    width: 50%;
+    margin: 15px 0;
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: 33%;
+      margin-left: 17%;
+    }
+  }
 }
