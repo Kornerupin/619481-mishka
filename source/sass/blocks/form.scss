@@ -9,6 +9,11 @@
   @media screen and (min-width: $bp-tablet-min) {
     padding: 0;
   }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
 }
 
 .form__group {
@@ -43,9 +48,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    padding: 50px;
-    padding-bottom: 32px;
-    margin: 0;
+    padding-left: 17%;
 
     &--dark {
       background-color: $color-gray-f1;
@@ -61,6 +64,11 @@
   @media screen and (min-width: $bp-desktop-min) {
     padding-left: 100px;
     padding-right: 100px;
+
+    &--dark {
+      padding-left: 108px;
+      padding-right: 20px;
+    }
   }
 }
 
@@ -99,7 +107,7 @@
   }
 
   @media screen and (min-width: $bp-desktop-min) {
-    left: 100px;
+    left: 110px;
   }
 }
 
@@ -121,6 +129,8 @@
     width: calc(100% - 230px);
     margin-right: 115px;
     margin-left: 115px;
+    padding-top: 36px;
+    padding-bottom: 8px;
   }
 }
 
@@ -227,6 +237,17 @@
       height: 48px;
     }
   }
+
+  @media screen and (min-width: $bp-tablet-min) {
+    padding-left: 88px;
+    line-height: 18px;
+    font-size: 19px;
+    letter-spacing: 0;
+
+    &::before {
+      left: 8px;
+    }
+  }
 }
 
 .form__type-input {
@@ -251,6 +272,10 @@
       width: 20px;
       height: 20px;
     }
+
+    @media screen and (min-width: $bp-tablet-min) {
+      left: 24px;
+    }
   }
 }
 
@@ -258,7 +283,7 @@
 .form__color-item {
   width: 100%;
 
-  @media screen and (min-width: $bp-tablet-min) {
+  @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     width: 52%;
     min-height: 76px;
 
@@ -268,7 +293,7 @@
   }
 
   @media screen and (min-width: $bp-desktop-min) {
-    width: 33%;
+    width: 33.3%;
     flex-grow: 1;
   }
 }

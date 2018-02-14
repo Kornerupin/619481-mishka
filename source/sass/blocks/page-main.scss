@@ -74,6 +74,8 @@
     justify-content: space-between;
     padding: 0 50px;
     padding-top: 145px;
+    max-width: 1150px;
+    margin: 0 auto;
   }
 }
 
@@ -104,9 +106,10 @@
   }
 
   @media screen and (min-width: $bp-desktop-min) {
-    margin-left: 115px;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-left: 17%;
+    padding-top: 138px;
+    padding-left: 30px;
+    padding-right: 50px;
 
     & .br-tablet {
       display: none;

@@ -12,10 +12,14 @@
   }
 
   @media screen and (min-width: $bp-desktop-min) {
-    margin: 0 100px;
-    padding: 0;
-    padding-top: 89px;
+    padding: 0 50px;
+    padding-top: 70px;
     padding-bottom: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 1150px;
+    box-sizing: border-box;
+    background-position: 50px;
   }
 }
 

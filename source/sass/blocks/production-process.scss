@@ -15,7 +15,12 @@
 
   @media screen and (min-width: $bp-desktop-min) {
     flex-wrap: wrap;
-    height: 465px;
+    height: 455px;
+    margin: 0 auto;
+    margin-top: 58px;
+    margin-bottom: 105px;
+
+    max-width: 1150px;
   }
 }
 
@@ -65,7 +70,7 @@
     font-size: 20px;
     padding-top: 95px;
     padding-right: calc(30% - 200px);
-    padding-left: 80px;
+    padding-left: 77px;
 
     &::before {
       top: 45px;
@@ -119,7 +124,10 @@
     height: 100%;
     overflow: hidden;
     order: 1;
-    outline: 5px solid red;
+
+    &::before {
+      background-size: 100px;
+    }
   }
 }
 
@@ -160,6 +168,7 @@
 
   @media screen and (min-width: $bp-desktop-min) {
     margin-top: auto;
+    padding: 24px 26px;
   }
 }
 
@@ -180,11 +189,12 @@
     margin: 30px auto;
     margin-bottom: 44px;
     margin-top: 25px;
-    width: calc(100% - 82px);
+    width: calc(100% - 80px);
   }
 
   @media screen and (min-width: $bp-desktop-min) {
     margin-bottom: 60px;
     margin-top: 20px;
+    width: 230px;
   }
 }
