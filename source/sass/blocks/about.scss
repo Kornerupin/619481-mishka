@@ -6,6 +6,8 @@
 
   @media screen and (min-width: $bp-tablet-min) {
     padding: 50px;
+    padding-top: 67px;
+    height: 534px;
   }
 
   @media screen and (min-width: $bp-desktop-min) {
@@ -20,7 +22,7 @@
   font-size: 25px;
 
   @media screen and (min-width: $bp-tablet-min) {
-    margin-bottom: 10px;
+    margin-bottom: 34px;
 
     font-size: 43px;
     line-height: 50px;
@@ -44,6 +46,8 @@
   @media screen and (min-width: $bp-tablet-min) {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
   }
 }
 
@@ -112,6 +116,8 @@
   @media screen and (min-width: $bp-tablet-min) {
     width: 50%;
     margin: 15px 0;
+    font-size: 20px;
+    line-height: 21px;
   }
 
   @media screen and (min-width: $bp-desktop-min) {

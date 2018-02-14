@@ -36,6 +36,14 @@ button {
   margin: -1px;
 }
 
+.br-desktop {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop-min) {
+    display: block;
+  }
+}
+
 //BODY > * {
 //  outline: 3px dashed deeppink;
 //  margin-bottom: 8px;;

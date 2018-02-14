@@ -3,7 +3,8 @@
   padding-top: 25px;
 
   @media screen  and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
-    padding-top: 80px;
+    padding: 0;
+    padding-top: 109px;
   }
 
   @media screen  and (min-width: $bp-desktop-min) {
@@ -71,6 +72,7 @@
 
     & tbody {
       display: flex;
+      margin-top: 37px;
     }
   }
 
@@ -85,16 +87,28 @@
   margin-bottom: 28px;
   display: block;
 
+  @media screen  and (min-width: $bp-tablet-min) {
+    width: 50%;
+    font-size: 17px;
+  }
 }
 
 .table-info__title {
   width: 30%;
 
   vertical-align: top;
+
+  @media screen  and (min-width: $bp-tablet-min) {
+    width: 25%;
+  }
 }
 
 .table-info__content {
   width: 70%;
+
+  @media screen  and (min-width: $bp-tablet-min) {
+    width: 75%;
+  }
 }
 
 .table-info__e-mail-link {
@@ -113,12 +127,20 @@
     color: $color-blue;
     opacity: 0.5;
   }
+
+  @media screen  and (min-width: $bp-tablet-min) {
+    margin-left: 6px;
+  }
 }
 
 .contacts__map {
   width: 100%;
   height: 460px;
   margin-top: 7px;
+
+  @media screen  and (min-width: $bp-tablet-min) {
+    margin-top: 26px;
+  }
 
   @media screen  and (min-width: $bp-desktop-min) {
     width: 50%;
@@ -141,6 +163,8 @@
   @media screen  and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
     width: 230px;
     margin: 50px auto;
+    margin-top: 54px;
+    font-size: 17px;
   }
 
   @media screen  and (min-width: $bp-desktop-min) {

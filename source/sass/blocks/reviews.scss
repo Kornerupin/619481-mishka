@@ -25,11 +25,12 @@
   font-size: 25px;
 
   @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
-    margin-top: 30px;
+    margin-top: 34px;
     margin-bottom: 0;
 
     font-size: 43px;
     line-height: 50px;
+
     order: 1;
   }
 
@@ -59,7 +60,8 @@
   margin: 12px 0;
 
   @media screen and (min-width: $bp-tablet-min) {
-    margin-top: 45px;
+    margin-top: 32px;
+    font-size: 17px;
     margin-bottom: 55px;
   }
 
@@ -77,6 +79,9 @@
   @media screen and (min-width: $bp-tablet-min) {
     order: 4;
     margin: 0;
+
+    margin-top: 7px;
+    letter-spacing: 0.7px;
   }
 
   @media screen and (min-width: $bp-desktop-min) {
@@ -90,6 +95,10 @@
   color: $color-gray-dark;
   margin-top: 9px;
   display: block;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    letter-spacing: -0.1px;
+  }
 }
 
 .reviews__control {
@@ -147,8 +156,14 @@
     border: 0;
 
     &--prev {
-      margin-right: 5px;
+      margin-top: 6px;
+      margin-right: 2px;
       margin-left: auto;
+    }
+
+    &--next {
+      margin-top: 6px;
+      margin-right: 2px;
     }
   }
 }
@@ -159,7 +174,7 @@
 
   @media screen and (min-width: $bp-tablet-min) {
     width: 175px;
-    margin-top: 30px;
+    margin-top: 34px;
     order: 2;
     margin-left: auto;
   }

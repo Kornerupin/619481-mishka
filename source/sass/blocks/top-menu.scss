@@ -10,9 +10,10 @@
   background: url("../../img/hero-mobile@1x.jpg") no-repeat center -20px;
 
   @media screen and (min-width: $bp-tablet-min) {
-    height: 565px;
+    height: 473px;
     font-size: 43px;
     line-height: 50px;
+    padding-top: 93px;
   }
 
   @media screen and (min-width: $bp-desktop-min) {
@@ -143,10 +144,22 @@
     background: url("../../img/icon-toy.svg") no-repeat center;
     opacity: 0.2;
     top: 18px;
+
+    @media screen and (min-width: $bp-tablet-min) {
+      right: 32px;
+    }
   }
 
   @media screen and (min-width: $bp-tablet-min) {
     height: 120px;
+    letter-spacing: 0.7px;
+    line-height: 30px;
+    padding-top: 28px;
+    padding-left: 35px;
+
+    &::before {
+      top: 28px;
+    }
 
     &:hover {
       height: 120px;

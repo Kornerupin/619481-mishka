@@ -10,7 +10,8 @@
 
   @media screen and (min-width: $bp-tablet-min) {
     padding: 50px;
-    min-height: 505px;
+    padding-top: 44px;
+    min-height: 512px;
   }
 
   @media screen and (min-width: $bp-desktop-min) {
@@ -22,7 +23,8 @@
   @media screen and (min-width: $bp-tablet-min) {
     display: flex;
     width: 100%;
-    padding-bottom: 55px;
+    padding-bottom: 49px;
+    letter-spacing: -0.3px;
   }
 
   @media screen and (min-width: $bp-desktop-min) {
@@ -66,8 +68,8 @@
   @media screen and (min-width: $bp-tablet-min) {
     text-align: center;
     margin-left: auto;
-    padding-top: 8px;
-    width: 100px;
+    padding-top: 9px;
+    width: 126px;
   }
 
   @media screen and (min-width: $bp-desktop-min) {
@@ -89,6 +91,8 @@
     margin: 0;
     width: calc(50% - 40px);
     margin-right: 40px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   @media screen and (min-width: $bp-desktop-min) {
@@ -108,6 +112,7 @@
   @media screen and (min-width: $bp-tablet-min) {
     width: calc(50% - 40px);
     margin-right: 40px;
+    margin-top: 36px;
   }
 
   @media screen and (min-width: $bp-desktop-min) {
@@ -124,6 +129,10 @@
   width: 35%;
 
   border-bottom: 1px solid $color-gray-light;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    width: 32%;
+  }
 }
 
 .week-product__value {
@@ -131,6 +140,10 @@
   padding: 7px 0;
 
   border-bottom: 1px solid $color-gray-light;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    width: 68%;
+  }
 }
 
 
@@ -173,6 +186,8 @@
     margin-top: auto;
     width: calc(50% - 40px);
     margin-right: 40px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   @media screen and (min-width: $bp-desktop-min) {
