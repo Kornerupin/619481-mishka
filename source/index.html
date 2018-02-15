@@ -274,22 +274,22 @@
 
     <div class="popup">
 
-      <div class="popup__content add-to-basket visually-hidden">
-        <h2 class="popup__title">Добавить в корзину</h2>
+      <div class="popup__content add-to-basket">
+        <h2 class="popup__title">Добавить в&nbsp;корзину</h2>
 
-        <p class="add-to-basket__description">Выберите размер:</p>
+        <p class="popup__description">Выберите размер:</p>
 
         <form class="add-to-basket__form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="add-to-basket__item-type">
-            <input type="radio" name="size" value="S" checked /> S
-          </label>
-          <label class="add-to-basket__item-type">
-            <input type="radio" name="size" value="M" /> M
-          </label>
-          <label class="add-to-basket__item-type">
-            <input type="radio" name="size" value="L" /> L
-          </label>
-          <input class="add-to-basket__submit" type="submit" value="Добавить" />
+          <input class="add-to-basket__item-type-input" id="addToBasketS" type="radio" name="size" value="S" checked />
+          <label class="add-to-basket__item-type" for="addToBasketS">S</label>
+
+          <input class="add-to-basket__item-type-input" id="addToBasketM" type="radio" name="size" value="M" />
+          <label class="add-to-basket__item-type" for="addToBasketM">M</label>
+
+          <input class="add-to-basket__item-type-input" id="addToBasketL" type="radio" name="size" value="L" />
+          <label class="add-to-basket__item-type" for="addToBasketL">L</label>
+
+          <input class="popup__button add-to-basket__submit" type="submit" value="Добавить" />
         </form>
       </div>
     </div>

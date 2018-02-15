@@ -1,3 +1,116 @@
 .popup {
-  display: block;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  background: rgba($color-white, 0.9);
+  z-index: 9999;
+}
+
+.popup__content {
+  width: 320px;
+  min-width: 320px;
+  min-height: 200px;
+  max-width: 570px;
+  border: 1px solid $color-gray-c6;
+  margin: auto;
+  background-color: $color-white;
+  box-shadow: 0 5px 10px lighten(rgba($color-black, 0.25), 1%);
+  box-sizing: border-box;
+  padding: 30px;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    width: 100%;
+    padding: 50px 105px;
+  }
+}
+
+.popup__title {
+  margin: 0;
+  text-align: center;
+  font-size: 25px;
+  line-height: 30px;
+  color: $color-black;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+
+.popup__description {
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 23px;
+
+  @media screen and (min-width: $bp-tablet-min) {
+    font-size: 17px;
+  }
+}
+
+.add-to-basket__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.add-to-basket__item-type-input {
+  display: none;
+
+  &:checked + .add-to-basket__item-type {
+    border-color: $color-blue-darker;
+  }
+}
+
+.add-to-basket__item-type {
+  flex-grow: 0;
+  width: 80px;
+  height: 48px;
+  border: 2px solid $color-gray-light;
+  margin-bottom: 31px;
+  display: flex;
+  font-size: 17px;
+  line-height: 16px;
+  justify-content: center;
+  padding-top: 14px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    border-color: $color-gray-normal;
+  }
+
+  @media screen and (min-width: $bp-tablet-min) {
+    width: 112px;
+  }
+}
+
+.popup__button {
+  width: 100%;
+  height: 50px;
+  border: 1px solid $color-blue-darker;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $color-white;
+  background-color: $color-blue-darker;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
