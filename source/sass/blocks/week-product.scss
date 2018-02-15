@@ -156,6 +156,7 @@
 .week-product__image {
   display: inline-block;
   margin: 25px auto;
+  max-width: 100%;
 
   @media screen and (min-width: $bp-tablet-min) {
     position: absolute;

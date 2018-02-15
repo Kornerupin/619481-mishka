@@ -70,6 +70,24 @@
       padding-right: 20px;
       padding-top: 1px;
       padding-bottom: 30px;
+
+      & .form__list::before,
+      & .form__list::after {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 3000px;
+        background: $color-gray-f1;
+        top: 0;
+        left: 100%;
+        position: absolute;
+        z-index: -1;
+      }
+
+      & .form__list::after {
+        left: auto;
+        right: 100%;
+      }
     }
   }
 }
@@ -203,6 +221,27 @@
   @media screen and (min-width: $bp-desktop-min) {
     padding-left: 111px;
     padding-right: 111px;
+
+    &--phone,
+    &--email {
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 3000px;
+        background: $color-gray-f1;
+        top: 0;
+        left: 100%;
+        position: absolute;
+        z-index: -1;
+      }
+
+      &::after {
+        left: auto;
+        right: 100%;
+      }
+    }
 
     &--phone {
       padding-top: 54px;
