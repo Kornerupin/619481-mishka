@@ -126,8 +126,8 @@
           Цена: 990 руб.
         </p>
 
-        <button type="button" class="week-product__add-to-basket">Заказать</button>
         </div>
+        <button type="button" class="week-product__add-to-basket" onclick="popup('add-to-basket');">Заказать</button>
 
       </section>
 
@@ -272,7 +272,7 @@
 
     </footer>
 
-    <div class="popup">
+    <div class="popup popup--closed">
 
       <div class="popup__content add-to-basket">
         <h2 class="popup__title">Добавить в&nbsp;корзину</h2>
@@ -292,11 +292,14 @@
           <input class="popup__button add-to-basket__submit" type="submit" value="Добавить" />
         </form>
       </div>
+
+      <div class="popup__place" onclick="this.parentNode.classList.add('popup--closed'); this.parentNode.getElementsByClassName('popup__content')[0].classList.add('visually-hidden');"></div>
     </div>
 
     <script type="text/javascript">
       document.getElementsByClassName('main-nav')[0].classList.add('main-nav--closed');
     </script>
+    <script type="text/javascript" src="js/functions.js"></script>
 
   </body>
 </html>

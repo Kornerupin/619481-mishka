@@ -8,6 +8,17 @@
   max-width: 100%;
   background: rgba($color-white, 0.9);
   z-index: 9999;
+
+  &--closed {
+    display: none;
+  }
+}
+
+.popup__place {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
 }
 
 .popup__content {
@@ -21,6 +32,7 @@
   box-shadow: 0 5px 10px lighten(rgba($color-black, 0.25), 1%);
   box-sizing: border-box;
   padding: 30px;
+  z-index: 2;
 
   @media screen and (min-width: $bp-tablet-min) {
     width: 100%;
