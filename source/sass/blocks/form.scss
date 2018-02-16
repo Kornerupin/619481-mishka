@@ -9,11 +9,10 @@
   @media screen and (min-width: $bp-tablet-min) {
     padding: 0;
   }
+}
 
-  @media screen and (min-width: $bp-desktop-min) {
-    max-width: 1150px;
-    margin: 0 auto;
-  }
+.form__dark-wrapper {
+  background-color: $color-gray-f1;
 }
 
 .form__group {
@@ -64,12 +63,20 @@
   @media screen and (min-width: $bp-desktop-min) {
     padding-left: 100px;
     padding-right: 100px;
+    max-width: 1150px;
+    box-sizing: border-box;
+    margin: 0 auto;
 
+    &--dark {
+      padding-top: 1px;
+      padding-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $bp-desktop-min) and (max-width: $bp-desktop-min) {
     &--dark {
       padding-left: 108px;
       padding-right: 20px;
-      padding-top: 1px;
-      padding-bottom: 30px;
     }
   }
 }
@@ -207,11 +214,17 @@
     &--phone {
       padding-top: 54px;
       padding-bottom: 11px;
+      max-width: 1150px;
+      box-sizing: border-box;
+      margin: 0 auto;
     }
 
     &--email {
       padding-top: 15px;
       padding-bottom: 45px;
+      max-width: 1150px;
+      box-sizing: border-box;
+      margin: 0 auto;
     }
   }
 }
@@ -595,7 +608,9 @@
 
   @media screen and (min-width: $bp-desktop-min) {
     padding-top: 50px;
-    margin-bottom: 0;
+    max-width: 1150px;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
 }
 
@@ -610,6 +625,10 @@
   @media screen and (min-width: $bp-desktop-min) {
     padding-left: 100px;
     padding-right: 100px;
+
+    max-width: 1150px;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
 }
 

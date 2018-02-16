@@ -8,7 +8,12 @@
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
-    background: url("../../img/review@1x.jpg") no-repeat left;
+
+    background: url("../../img/review@1x.jpg") no-repeat left / auto 100%;
+
+    @media (min-resolution: 144dpi), (min-resolution: 144dpi) {
+      background-image: url("../../img/review@2x.jpg");
+    }
   }
 
   @media screen and (min-width: $bp-desktop-min) {
@@ -80,9 +85,11 @@
   font-weight: bold;
   line-height: 20px;
   margin-bottom: 0;
+  width: 100%;
 
   @media screen and (min-width: $bp-tablet-min) {
     order: 4;
+    width: 50%;
     margin: 0;
 
     margin-top: 7px;

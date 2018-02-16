@@ -120,7 +120,19 @@
           </tr>
         </table>
 
-        <img class="week-product__image" src="../img/triple-set-mobile@1x.jpg" alt="" />
+        <picture>
+          <source media="(min-width: 1150px)"
+                  srcset="../img/triple-set-desktop@2x.jpg 2x,
+                          ../img/triple-set-desktop@1x.jpg 1x"/>
+          <source media="(min-width: 768px)"
+                  srcset="../img/triple-set-tablet@2x.jpg 2x,
+                          ../img/triple-set-tablet@1x.jpg 1x"/>
+          <img class="week-product__image"
+                  src="../img/triple-set-mobile@1x.jpg"
+                  srcset="../img/triple-set-mobile@2x.jpg 2x,
+                          ../img/triple-set-mobile@1x.jpg 1x"
+                  alt="" />
+        </picture>
 
         <p class="week-product__price">
           Цена: 990 руб.
@@ -300,6 +312,7 @@
       document.getElementsByClassName('main-nav')[0].classList.add('main-nav--closed');
     </script>
     <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/picturefill.min.js"></script>
 
   </body>
 </html>

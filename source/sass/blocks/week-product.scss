@@ -155,17 +155,19 @@
 
 .week-product__image {
   display: inline-block;
-  margin: 25px auto;
+  margin: 28px auto;
+  margin-bottom: 14px;
+  max-width: 100%;
 
   @media screen and (min-width: $bp-tablet-min) {
     position: absolute;
-    top: 160px;
+    top: 150px;
     right: 50px;
     z-index: -1;
 
     display: block;
     max-width: calc(50% - 50px);
-    height: calc(100% - 210px);
+    height: calc(100% - 200px);
     margin: 0;
   }
 

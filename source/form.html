@@ -108,41 +108,43 @@
         </fieldset>
 
 
-        <fieldset class="form__group form__group--dark">
-          <legend class="form__group-title">Цвет</legend>
+        <div class="form__dark-wrapper">
+          <fieldset class="form__group form__group--dark">
+            <legend class="form__group-title">Цвет</legend>
 
-          <ul class="form__list">
-            <li class="form__color-item">
-              <input class="form__color-input" id="formColorWhite" type="checkbox" name="color" value="white" checked />
-              <label class="form__color-description" for="formColorWhite">Белый</label>
-            </li>
+            <ul class="form__list">
+              <li class="form__color-item">
+                <input class="form__color-input" id="formColorWhite" type="checkbox" name="color" value="white" checked />
+                <label class="form__color-description" for="formColorWhite">Белый</label>
+              </li>
 
-            <li class="form__color-item">
-              <input class="form__color-input" id="formColorGray" type="checkbox" name="color" value="gray" checked />
-              <label class="form__color-description" for="formColorGray">Серый</label>
-            </li>
+              <li class="form__color-item">
+                <input class="form__color-input" id="formColorGray" type="checkbox" name="color" value="gray" checked />
+                <label class="form__color-description" for="formColorGray">Серый</label>
+              </li>
 
-            <li class="form__color-item">
-              <input class="form__color-input" id="formColorTiffany" type="checkbox" name="color" value="tiffany" />
-              <label class="form__color-description" for="formColorTiffany">&#171;Тиффани&#187;</label>
-            </li>
+              <li class="form__color-item">
+                <input class="form__color-input" id="formColorTiffany" type="checkbox" name="color" value="tiffany" />
+                <label class="form__color-description" for="formColorTiffany">&#171;Тиффани&#187;</label>
+              </li>
 
-            <li class="form__color-item">
-              <input class="form__color-input" id="formColorBlack" type="checkbox" name="color" value="black" />
-              <label class="form__color-description" for="formColorBlack">Черный</label>
-            </li>
+              <li class="form__color-item">
+                <input class="form__color-input" id="formColorBlack" type="checkbox" name="color" value="black" />
+                <label class="form__color-description" for="formColorBlack">Черный</label>
+              </li>
 
-            <li class="form__color-item">
-              <input class="form__color-input" id="formColorPink" type="checkbox" name="color" value="pink" />
-              <label class="form__color-description" for="formColorPink">Розовый</label>
-            </li>
+              <li class="form__color-item">
+                <input class="form__color-input" id="formColorPink" type="checkbox" name="color" value="pink" />
+                <label class="form__color-description" for="formColorPink">Розовый</label>
+              </li>
 
-            <li class="form__color-item">
-              <input class="form__color-input" id="formColorOrange" type="checkbox" name="color" value="orange" />
-              <label class="form__color-description" for="formColorOrange">Оранжевый</label>
-            </li>
-          </ul>
-        </fieldset>
+              <li class="form__color-item">
+                <input class="form__color-input" id="formColorOrange" type="checkbox" name="color" value="orange" />
+                <label class="form__color-description" for="formColorOrange">Оранжевый</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
 
 
         <fieldset class="form__group form__group--personal">
@@ -172,16 +174,18 @@
           </ul>
         </fieldset>
 
-        <label class="form__group-solo form__group-solo--dark form__group-solo--phone">
-          <span>Тел</span>
-          <input class="form__phone-input" type="tel" name="phone" placeholder="+7 (XXX) XXX XX XX*" required />
-          <span class="form__phone-img"></span>
-        </label>
+        <div class="form__dark-wrapper">
+          <label class="form__group-solo form__group-solo--dark form__group-solo--phone">
+            <span>Тел</span>
+            <input class="form__phone-input" type="tel" name="phone" placeholder="+7 (XXX) XXX XX XX*" required />
+            <span class="form__phone-img"></span>
+          </label>
 
-        <label class="form__group-solo form__group-solo--dark form__group-solo--email"><span>E-mail</span>
-          <input class="form__email-input" type="email" name="email" placeholder="Ваш Email*" required />
-          <span class="form__email-img"></span>
-        </label>
+          <label class="form__group-solo form__group-solo--dark form__group-solo--email"><span>E-mail</span>
+            <input class="form__email-input" type="email" name="email" placeholder="Ваш Email*" required />
+            <span class="form__email-img"></span>
+          </label>
+        </div>
 
 
         <label class="form__group-solo form__group-solo--textarea">

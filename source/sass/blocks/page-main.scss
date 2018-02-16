@@ -106,10 +106,12 @@
   }
 
   @media screen and (min-width: $bp-desktop-min) {
-    margin-left: 17%;
     padding-top: 138px;
-    padding-left: 30px;
+    padding-left: 224px;
     padding-right: 50px;
+    max-width: 1150px;
+    box-sizing: border-box;
+    margin: 0 auto;
 
     & .br-tablet {
       display: none;
