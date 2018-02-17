@@ -273,17 +273,32 @@
 .main-nav__search-svg,
 .main-nav__basket-svg {
   position: absolute;
-  top: 31px;
-  left: 31px;
+  top: 36px;
+  left: 29px;
 
-  width: 20px;
-  height: 20px;
+  width: 21px;
 
   opacity: 0.2;
 
-  @media screen and (min-width: $bp-tablet-min) {
-    top: 34px;
+  @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+    left: 32px;
   }
+
+  @media screen and (min-width: $bp-tablet-min) {
+    top: 36px;
+  }
+}
+
+.main-nav__search-svg {
+  height: 19px;
+}
+
+.main-nav__basket-svg {
+  top: 36px;
+  left: 29px;
+
+  width: 21px;
+  height: 18px;
 }
 
 .main-nav__item--basket {

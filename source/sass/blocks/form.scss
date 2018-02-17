@@ -404,9 +404,9 @@
 
 .form__name-item {
   padding-top: 15px;
+  width: 100%;
 
   @media screen and (min-width: $bp-tablet-min) {
-    width: 100%;
     padding-top: 11px;
     padding-bottom: 2px;
     margin-bottom: 20px;
