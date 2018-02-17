@@ -454,6 +454,8 @@
   position: absolute;
   color: $color-black;
   opacity: 0.2;
+
+  transition: all 0.1s;
 }
 
 .form__phone-img {
@@ -501,6 +503,8 @@
   width: calc(100% - 40px);
   margin-bottom: 5px;
   padding-right: 40px;
+
+  transition: all 0.1s;
 
   &:hover,
   &:focus {
