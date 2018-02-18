@@ -149,6 +149,7 @@
     flex-wrap: wrap;
     width: 75%;
     margin-left: 25%;
+    box-sizing: border-box;
   }
 
   @media screen and (min-width: $bp-desktop-min) {
@@ -205,6 +206,26 @@
 
     &--email {
       padding-top: 0;
+      padding-bottom: 45px;
+    }
+  }
+
+
+  @media screen and (min-width: $bp-tablet-min + 1) {
+    margin-bottom: 0;
+    padding: 50px;
+
+    &--dark {
+      background-color: $color-gray-f1;
+    }
+
+    &--phone {
+      padding-top: 62px;
+      padding-bottom: 9px;
+    }
+
+    &--email {
+      padding-top: 22px;
       padding-bottom: 45px;
     }
   }
@@ -579,6 +600,10 @@
 
   @media screen and (min-width: $bp-tablet-min) {
     padding-top: 27px;
+  }
+
+  @media screen and (min-width: $bp-tablet-min + 1) {
+    padding-top: 52px;
   }
 
   @media screen and (min-width: $bp-desktop-min) {
