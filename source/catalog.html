@@ -5,32 +5,6 @@
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Pixel Glass -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* По умолчанию показывается мобильный макет */
-        background-image: url( "./pixel-glass/mishka-catalog-mobile.jpg" );
-      }
-      /* Планшет */
-      @media ( min-width: 768px ) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url( "./pixel-glass/mishka-catalog-tablet.jpg" );
-        }
-      }
-      /* Десктоп */
-      @media ( min-width: 1150px ) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url( "./pixel-glass/mishka-catalog-desktop.jpg" );
-        }
-      }
-    </style>
-    <link href="./pixel-glass/styles.css" rel="stylesheet">
-    <script src="./pixel-glass/script.js"></script>
-    <!-- // Pixel Glass -->
   </head>
   <body>
     <header class="page-header">
@@ -86,10 +60,10 @@
 
         <ul class="main-nav__list main-nav__list--actions">
           <li class="main-nav__item main-nav__item--new">
-            <a class="main-nav__item-link main-nav__item-link--new" href="#">Новые поступления</a>
+            <a class="main-nav__item-link main-nav__item-link--new" href="/catalog.html#">Новые поступления</a>
           </li>
           <li class="main-nav__item main-nav__item--sale">
-            <a class="main-nav__item-link main-nav__item-link--sale" href="#">Распродажа</a>
+            <a class="main-nav__item-link main-nav__item-link--sale" href="/catalog.html#">Распродажа</a>
           </li>
         </ul>
 
@@ -166,7 +140,7 @@
                 </svg>
               </button>
             </div>
-          </div>
+        </div>
         </article>
 
         <article class="product-card" data-id="2433236">
@@ -206,13 +180,6 @@
         <h2 class="production-process__title">Процесс производства</h2>
 
         <div class="production-process__wrapper-video">
-          <video class="production-process__video" poster="no">
-            <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
-            <!--Надо будет попробовать вставить сюда iframe с ютуба и посмотреть, будет ли он грузиться, если загрузятся варианты выше.-->
-            <a href="http://youtube.com/my-video/video/demo.mp4">
-              Перейдите по ссылке, чтобы посмотреть видео на ютубе.
-            </a>.
-          </video>
         </div>
         <div class="production-process__description">
           <p class="production-process__text">
