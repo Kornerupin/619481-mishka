@@ -47,6 +47,7 @@
 
   font-size: 25px;
   color: $color-black;
+  z-index: 2;
 
   @media screen and (min-width: $bp-tablet-min) {
     font-size: 43px;
@@ -166,7 +167,6 @@
     position: absolute;
     top: 148px;
     right: 51px;
-    z-index: -1;
 
     display: block;
     max-width: calc(50% - 50px);
