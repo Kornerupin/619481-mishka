@@ -35,18 +35,20 @@
   height: 100%;
 
   font-size: 0;
+
+  &:hover .socials__item-svg {
+    color: $color-blue-soc;
+  }
+
+  &:active .socials__item-svg {
+    opacity: 0.4;
+  }
 }
 
 .socials__item-svg {
-  fill: $color-black;
+  max-width: 25px;
+  max-height: 30px;
+  color: $color-black;
 
-  transition: fill 0.5s;
-
-  &:hover {
-    fill: $color-blue-soc;
-  }
-
-  &:active {
-    fill-opacity: 0.4;
-  }
+  transition: color 0.1s;
 }

@@ -20,8 +20,13 @@
     margin: 0 auto;
     margin-top: 58px;
     margin-bottom: 105px;
+    box-sizing: border-box;
 
     max-width: 1150px;
+  }
+
+  @media screen and (min-width: $bp-desktop-min + 100px) {
+    padding: 0;
   }
 }
 
@@ -154,6 +159,8 @@
 .production-process__video {
   height: 100%;
   width: 100%;
+
+  cursor: pointer;
 }
 
 .production-process__description {

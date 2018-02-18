@@ -2,6 +2,8 @@
 
 var gulp = require("gulp");
 var sass = require("gulp-sass");
+var rename = require("gulp-rename");
+var svgstore = require("gulp-svgstore");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
@@ -29,4 +31,13 @@ gulp.task("serve", ["style"], function() {
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html").on("change", server.reload);
+});
+
+gulp.task("sprite", function () {
+  return gulp.src("source/img/icon-*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
 });
