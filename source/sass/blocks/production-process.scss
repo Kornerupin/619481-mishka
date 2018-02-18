@@ -24,6 +24,10 @@
 
     max-width: 1150px;
   }
+
+  @media screen and (min-width: $bp-desktop-min + 100px) {
+    padding: 0;
+  }
 }
 
 .production-process__title {
