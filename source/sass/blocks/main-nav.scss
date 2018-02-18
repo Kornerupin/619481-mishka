@@ -39,25 +39,6 @@
   @media screen and (min-width: $bp-desktop-min) {
     max-width: 1150px;
     margin: 0 auto;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 88px;
-      left: 0;
-      display: block;
-      width: calc(50% - 570px);
-      height: calc(100% - 80px);
-      background-color: $color-gray-lighten;
-      border-top: 1px solid $color-gray-light;
-      z-index: -1;
-    }
-
-    &::after {
-      left: auto;
-      right: 0;
-    }
   }
 }
 

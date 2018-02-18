@@ -6,6 +6,7 @@
 *.psd
 *.sublime*
 node_modules/
+build/
 **/pixel-glass/
 npm-debug.*
 source/css/*.css
