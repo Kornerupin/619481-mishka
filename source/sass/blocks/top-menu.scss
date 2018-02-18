@@ -11,14 +11,13 @@
     height: 23px;
     z-index: 5;
 
-    @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+    @media screen and (min-width: $bp-tablet-min) {
       background: url("../../img/bg-zigzag-fill.svg") repeat-x;
       background-position: 40px 0;
       background-size: 100% 23px;
     }
 
     @media screen and (min-width: $bp-desktop-min) {
-      background: url("../../img/bg-zigzag-fill.svg") repeat-x;
       background-size: 109% 35px;
       background-position: 11px 4px;
       height: 30px;
@@ -102,22 +101,20 @@
     height: 120px;
   }
 
-  &--decor-thing {
-    background-color: $color-blue-darker;
-
+  &--decor-thing,
+  &--child-toys {
     &:hover,
     &:active {
       height: 125px;
     }
   }
 
+  &--decor-thing {
+    background-color: $color-blue-darker;
+  }
+
   &--child-toys {
     background-color: $color-blue-lighter;
-
-    &:hover,
-    &:active {
-      height: 125px;
-    }
   }
 }
 
