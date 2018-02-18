@@ -96,12 +96,9 @@
 }
 
 .top-menu__item {
-  &--decor-thing,
-  &--child-toys {
-    &:hover,
-    &:active {
-      height: 108px;
-    }
+  &:hover,
+  &:active {
+    height: 108px;
   }
 
   &--decor-thing {
@@ -116,12 +113,9 @@
     width: 50%;
     height: 120px;
 
-    &--decor-thing,
-    &--child-toys {
-      &:hover,
-      &:active {
-        height: 125px;
-      }
+    &:hover,
+    &:active {
+      height: 125px;
     }
   }
 }
