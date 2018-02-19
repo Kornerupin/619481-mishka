@@ -15,8 +15,8 @@
     z-index: 5;
 
     background: url("../../img/bg-zigzag-line.svg") repeat-x;
-    background-position: 24px 5px;
-    background-size: 100% 100%;
+    background-position: 8px 13px;
+    background-size: 100% 7px;
   }
 
   @media screen and (min-width: $bp-tablet-min) {
@@ -24,6 +24,7 @@
       top: 66px;
 
       background-position: 19px -2px;
+      background-size: 100% 100%;
     }
 
     @media screen and (min-width: $bp-desktop-min) {
