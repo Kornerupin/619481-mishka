@@ -23,8 +23,8 @@
     &::before {
       top: 66px;
 
-      background-position: 19px -2px;
-      background-size: 100% 100%;
+      background-position: 19px 0;
+      background-size: 100% 17px;
     }
 
     @media screen and (min-width: $bp-desktop-min) {
@@ -55,6 +55,7 @@
 
       width: auto;
       background-position: 26px 0;
+      background-size: 100% 100%;
     }
   }
 }
