@@ -15,7 +15,7 @@
 
       <nav class="main-nav">
         <div class="main-nav__logo">
-          <a class="main-nav__logo-link" href="/">
+          <a class="main-nav__logo-link main-nav__logo-link--active" href="/">
             <picture class="main-nav__logo-img">
               <source media="(min-width: 1150px)"
                       srcset="../img/logo-desktop.svg"/>
@@ -195,7 +195,11 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__content page-footer__logo">
-          <a class="page-footer__logo-link" href="/">Mishka</a>
+          <a class="page-footer__logo-link" href="/">Mishka
+            <svg class="page-footer__logo-svg">
+              <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
+            </svg>
+          </a>
         </div>
 
         <div class="page-footer__content page-footer__socials socials">
@@ -203,21 +207,21 @@
 
           <ul class="socials__list">
             <li class="socials__item">
-              <a class="socials__item-link socials__item-link--instagram" href="#">
+              <a class="socials__item-link socials__item-link--instagram" href="#">Instagram
                 <svg class="socials__item-svg">
                   <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__item-link socials__item-link--facebook" href="#">
+              <a class="socials__item-link socials__item-link--facebook" href="#">Facebook
                 <svg class="socials__item-svg">
                   <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__item-link socials__item-link--twitter" href="#">
+              <a class="socials__item-link socials__item-link--twitter" href="#">Twitter
                 <svg class="socials__item-svg">
                   <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
@@ -227,11 +231,11 @@
         </div>
 
         <div class="page-footer__content page-footer__developer">
-        <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="page-footer__developer-text">Разработано</span>
-          <img class="page-footer__developer-image" src="./img/logo-htmlacademy.svg" alt="HTML Academy" />
-        </a>
-      </div>
+          <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="page-footer__developer-text">Разработано</span>
+            <img class="page-footer__developer-image" src="./img/logo-htmlacademy.svg" alt="HTML Academy" />
+          </a>
+        </div>
       </div>
     </footer>
 
@@ -262,6 +266,7 @@
 
     <script>
       document.getElementsByClassName('main-nav')[0].classList.add('main-nav--closed');
+      document.querySelector('.main-nav__button-toggle').classList.add('main-nav__button-toggle--active');
     </script>
     <script src="js/functions.js"></script>
     <script src="js/picturefill.min.js"></script>

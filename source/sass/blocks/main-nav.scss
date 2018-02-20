@@ -67,6 +67,14 @@
 
   height: 78px;
 
+  &--active:hover .main-nav__logo-img {
+    opacity: 0.6;
+  }
+
+  &--active:active .main-nav__logo-img {
+    opacity: 0.3;
+  }
+
   @media screen and (min-width: $bp-tablet-min) {
     padding: 5px 0;
     padding-left: 50px;
@@ -96,7 +104,7 @@
   top: 0;
   right: 0;
 
-  display: block;
+  display: none;
   height: 78px;
   width: 78px;
   padding: 0;
@@ -107,6 +115,10 @@
   border: none;
 
   transition: border 0s 0.2s linear;
+
+  &--active {
+    display: block;
+  }
 
   &::before,
   &::after {
