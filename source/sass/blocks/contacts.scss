@@ -58,6 +58,12 @@
       background-size: 100% 100%;
     }
   }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: $bp-desktop-min) {
+    min-height: 721px;
+    box-sizing: border-box;
+    padding-bottom: 145px;
+  }
 }
 
 .contacts__title {
@@ -259,5 +265,10 @@
     margin-top: auto;
     margin-left: 182px;
     font-size: 17px;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: $bp-desktop-min) {
+    position: absolute;
+    bottom: 105px;
   }
 }

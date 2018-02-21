@@ -14,12 +14,24 @@
     min-height: 512px;
   }
 
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: $bp-tablet-min) {
+    min-height: 600px;
+    box-sizing: border-box;
+    padding-bottom: 200px;
+  }
+
   @media screen and (min-width: $bp-desktop-min) {
     min-height: 657px;
     padding-top: 44px;
 
     margin: 0 auto;
     max-width: 1150px;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: $bp-desktop-min) {
+    min-height: 750px;
+    box-sizing: border-box;
+    padding-bottom: 200px;
   }
 }
 
@@ -202,9 +214,21 @@
     line-height: 24px;
   }
 
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: $bp-tablet-min) {
+    position: absolute;
+    bottom: 103px;
+    left: 25px;
+  }
+
   @media screen and (min-width: $bp-desktop-min) {
     width: calc(33% - 60px);
     margin-left: 17%;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: $bp-desktop-min) {
+    position: absolute;
+    bottom: 104px;
+    width: calc(33% - 130px);
   }
 }
 
@@ -223,7 +247,18 @@
     margin-right: calc(75% - 125px);
   }
 
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: $bp-tablet-min) {
+    position: absolute;
+    bottom: 50px;
+  }
+
   @media screen and (min-width: $bp-desktop-min) {
     margin-right: calc(66.5% - 114px);
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: $bp-desktop-min) {
+    position: absolute;
+    bottom: 50px;
+    right: -16px;
   }
 }

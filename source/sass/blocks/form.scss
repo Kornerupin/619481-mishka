@@ -27,25 +27,6 @@
 
   border: none;
 
-  @media screen and (max-width: $bp-mobile-max) {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 7px;
-      left: 65px;
-
-      width: calc(100% - 65px);
-      height: 1px;
-
-      background-color: $color-blue-lighter;
-    }
-
-    &--email::after {
-      left: 80px;
-      width: calc(100% - 80px);
-    }
-  }
-
   @media screen and (min-width: $bp-tablet-min) {
     display: flex;
     flex-wrap: wrap;
@@ -74,6 +55,11 @@
       padding-top: 1px;
       padding-bottom: 30px;
     }
+
+    &--personal {
+      padding-top: 20px;
+      padding-bottom: 15px;
+    }
   }
 
   @media screen and (min-width: $bp-desktop-min) {
@@ -92,12 +78,13 @@
   position: relative;
 
   display: block;
+  width: 100%;
 
   line-height: 13px;
   text-transform: uppercase;
   color: $color-blue-darker;
 
-  @media screen and (max-width: $bp-tablet-min) {
+  @media screen and (max-width: $bp-mobile-max) {
     &::before {
       content: "";
       position: absolute;
@@ -155,6 +142,23 @@
     width: 75%;
     margin-left: 25%;
     box-sizing: border-box;
+
+    &--personal {
+      padding-top: 41px;
+      padding-bottom: 0;
+    }
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: $bp-tablet-min) {
+    &--personal {
+      padding-top: 34px;
+    }
+  }
+
+  @supports (-ms-ime-align:auto) {
+    &--personal {
+      padding-top: 34px;
+    }
   }
 
   @media screen and (min-width: $bp-desktop-min) {
@@ -163,11 +167,6 @@
     margin-left: 115px;
     padding-top: 36px;
     padding-bottom: 8px;
-
-    &--personal {
-      padding-top: 41px;
-      padding-bottom: 0;
-    }
   }
 
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: $bp-mobile-max) {
@@ -214,7 +213,7 @@
     }
 
     &--phone {
-      padding-top: 42px;
+      padding-top: 33px;
       padding-bottom: 9px;
     }
 
@@ -223,7 +222,6 @@
       padding-bottom: 45px;
     }
   }
-
 
   @media screen and (min-width: $bp-tablet-min + 1) {
     margin-bottom: 0;
@@ -241,6 +239,18 @@
     &--email {
       padding-top: 22px;
       padding-bottom: 45px;
+    }
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: $bp-tablet-min) {
+    &--phone {
+      padding-top: 59px;
+    }
+  }
+
+  @supports (-ms-ime-align:auto) {
+    &--phone {
+      padding-top: 59px;
     }
   }
 
@@ -467,14 +477,13 @@
 
   @media screen and (min-width: $bp-tablet-min) {
     padding-top: 11px;
-    padding-bottom: 2px;
-    margin-bottom: 20px;
+    padding-bottom: 29px;
+    height: 76px;
+    box-sizing: border-box;
   }
 
   @media screen and (min-width: $bp-desktop-min) {
     padding-left: 10px;
-    padding-bottom: 29px;
-    margin-bottom: 0;
   }
 }
 
@@ -532,8 +541,11 @@
   top: 34px;
   right: 10px;
 
+  width: 25px;
+  height: 25px;
+
   @media screen and (min-width: $bp-tablet-min) {
-    top: 62px;
+    top: 57px;
     right: 75px;
   }
 
@@ -542,8 +554,13 @@
     right: 233px;
   }
 
-  width: 25px;
-  height: 25px;
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: $bp-tablet-min) {
+    top: 63px;
+  }
+
+  @supports (-ms-ime-align:auto) {
+    top: 63px;
+  }
 }
 
 .form__email-img {
@@ -552,7 +569,7 @@
   right: 6px;
 
   @media screen and (min-width: $bp-tablet-min) {
-    top: 21px;
+    top: 25px;
     right: 72px;
   }
 
@@ -600,6 +617,8 @@
     padding-left: 20px;
     padding-bottom: 12px;
     background-color: $color-gray-f1;
+    margin-bottom: 0;
+    height: 46px;
   }
 
   @media screen and (min-width: $bp-desktop-min) {
@@ -653,7 +672,7 @@
   margin-bottom: 2px;
 
   @media screen and (min-width: $bp-tablet-min) {
-    padding-top: 27px;
+    padding-top: 31px;
   }
 
   @media screen and (min-width: $bp-tablet-min + 1) {
