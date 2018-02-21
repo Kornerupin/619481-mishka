@@ -16,6 +16,15 @@
     display: flex;
     flex-direction: column;
   }
+
+  /* Хакаем IE */
+  @media all and (-ms-high-contrast: none) and (min-width: $bp-desktop-min) {
+    margin-right: 5%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .product-card__image-wrapper {
@@ -31,7 +40,7 @@
 
   @media screen and (min-width: $bp-desktop-min) {
     width: 100%;
-    min-height: 463px;
+    min-height: 400px;
     overflow: hidden;
   }
 }
@@ -130,7 +139,7 @@
   @media screen and (min-width: $bp-desktop-min) {
     width: 100%;
     margin-top: 5px;
-    margin-bottom: 45px;
+    margin-bottom: 15px;
   }
 }
 

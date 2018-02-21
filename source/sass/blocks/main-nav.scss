@@ -75,12 +75,17 @@
     opacity: 0.3;
   }
 
+  & .main-nav__logo-img {
+    align-self: center;
+  }
+
   @media screen and (min-width: $bp-tablet-min) {
     padding: 5px 0;
     padding-left: 50px;
 
     & .main-nav__logo-img {
       justify-content: flex-start;
+      //align-self: center;
     }
   }
 
@@ -238,12 +243,12 @@
   text-decoration: none;
   color: $color-black;
 
-  &:hover {
-    color: lighten($color-gray-dark, 40%);
+  &[href]:hover {
+    color: rgba($color-gray-dark, 0.4);
   }
 
-  &:active {
-    color: lighten($color-gray-dark, 60%);
+  &[href]:active {
+    color: rgba($color-gray-dark, 0.6);
   }
 
   @media screen and (min-width: $bp-tablet-min) {

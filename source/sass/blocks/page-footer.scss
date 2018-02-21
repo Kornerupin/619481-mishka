@@ -76,10 +76,6 @@
   @media screen and (min-width: $bp-tablet-min) {
     margin-left: 50px;
   }
-
-  @media screen and (min-width: $bp-desktop-min) {
-    margin-left: 100px;
-  }
 }
 
 .page-footer__developer {
@@ -104,10 +100,6 @@
   @media screen and (min-width: $bp-tablet-min) {
     padding-right: 50px;
     width: 100%;
-  }
-
-  @media screen and (min-width: $bp-desktop-min) {
-    padding-right: 100px;
   }
 
   &:hover .page-footer__developer-image {

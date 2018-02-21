@@ -63,10 +63,15 @@
   @media screen and (min-width: $bp-desktop-min) {
     display: flex;
     justify-content: space-between;
-    padding: 0 50px;
     padding-top: 124px;
-    max-width: 1150px;
+    max-width: 1050px;
     margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  /* Хакаем IE */
+  @media all and (-ms-high-contrast: none) {
+    justify-content: center;
   }
 }
 

@@ -21,6 +21,7 @@
   position: relative;
 
   display: flex;
+  flex-direction: column;
   padding: 14px 0;
   padding-bottom: 25px;
 
@@ -80,6 +81,10 @@
       padding-left: 108px;
       padding-right: 20px;
     }
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: $bp-mobile-max) {
+    padding-top: 0;
   }
 }
 
@@ -158,6 +163,10 @@
     margin-left: 115px;
     padding-top: 36px;
     padding-bottom: 8px;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: $bp-mobile-max) {
+    padding-top: 13px;
   }
 }
 
@@ -492,6 +501,10 @@
     line-height: 18px;
     font-size: 19px;
   }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: $bp-mobile-max) {
+    padding-bottom: 10px;
+  }
 }
 
 .form__phone-img,
@@ -581,6 +594,10 @@
   @media screen and (min-width: $bp-desktop-min) {
     width: calc(100% - 230px);
     margin-right: 115px;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: $bp-mobile-max) {
+    padding-bottom: 11px;
   }
 }
 
