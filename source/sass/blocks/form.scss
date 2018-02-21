@@ -76,7 +76,7 @@
     }
   }
 
-  @media screen and (min-width: $bp-desktop-min) and (max-width: $bp-desktop-min) {
+  @media screen and (min-width: $bp-desktop-min) {
     &--dark {
       padding-left: 108px;
       padding-right: 20px;
@@ -163,6 +163,11 @@
     margin-left: 115px;
     padding-top: 36px;
     padding-bottom: 8px;
+
+    &--personal {
+      padding-top: 41px;
+      padding-bottom: 0;
+    }
   }
 
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: $bp-mobile-max) {
@@ -468,6 +473,8 @@
 
   @media screen and (min-width: $bp-desktop-min) {
     padding-left: 10px;
+    padding-bottom: 29px;
+    margin-bottom: 0;
   }
 }
 
@@ -505,6 +512,10 @@
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: $bp-mobile-max) {
     padding-bottom: 10px;
   }
+
+  @media screen and (min-width: $bp-desktop-min) {
+    height: 19px;
+  }
 }
 
 .form__phone-img,
@@ -527,7 +538,7 @@
   }
 
   @media screen and (min-width: $bp-desktop-min) {
-    top: 55px;
+    top: 57px;
     right: 233px;
   }
 
@@ -546,7 +557,7 @@
   }
 
   @media screen and (min-width: $bp-desktop-min) {
-    top: 19px;
+    top: 23px;
     right: 230px;
   }
 
@@ -594,6 +605,8 @@
   @media screen and (min-width: $bp-desktop-min) {
     width: calc(100% - 230px);
     margin-right: 115px;
+    margin-bottom: 0;
+    height: 46px;
   }
 
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: $bp-mobile-max) {
@@ -648,10 +661,11 @@
   }
 
   @media screen and (min-width: $bp-desktop-min) {
-    padding-top: 50px;
+    padding-top: 54px;
     max-width: 1150px;
     box-sizing: border-box;
     margin: 0 auto;
+    height: 240px;
   }
 }
 
@@ -666,6 +680,7 @@
   @media screen and (min-width: $bp-desktop-min) {
     padding-left: 100px;
     padding-right: 100px;
+    padding-top: 3px;
 
     max-width: 1150px;
     box-sizing: border-box;
